@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Activity.UserCouponActivity">
+
+    <include
+        android:id="@+id/mtoolbar"
+        layout="@layout/view_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:clipToPadding="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_six" />
+
+        <TextView
+            android:id="@+id/tv_coupon_enable"
+            style="@style/Blackappleregular25"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="보유하신 쿠폰이 없습니다."
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Blacktwoappleregular12"
+                android:paddingBottom="@dimen/activity_dimens_xsmall"
+                android:text="@string/coupon_info_1"
+
+                />
+
+            <TextView
+                style="@style/Blacktwoappleregular12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/activity_dimens_xsmall"
+                android:text="@string/coupon_info_2"
+
+                />
+
+            <TextView
+                style="@style/Blacktwoappleregular12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/activity_dimens"
+                android:text="@string/coupon_info_3"
+
+                />
+
+            <TextView
+                style="@style/Blacktwoappleregular12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/activity_dimens_xsmall"
+                android:text="@string/coupon_info_date_1"
+
+                />
+
+            <TextView
+                style="@style/Blacktwoappleregular12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/activity_dimens"
+                android:text="@string/coupon_info_date_2"
+
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

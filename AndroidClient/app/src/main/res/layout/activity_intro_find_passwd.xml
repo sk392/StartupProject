@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.sk392.kr.carmony.Activity.IntroSignupActivity">
+
+    <include
+        layout="@layout/view_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingBottom="40dp">
+
+        <RelativeLayout
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="197.5dp"
+            android:background="@drawable/edittext_border">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="9.5dp"
+                android:background="@drawable/mail_icon" />
+
+
+            <EditText
+                android:id="@+id/et_find_passwd"
+                style="@style/Warmgreyappleregular13"
+                android:layout_width="252dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="55dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_find_passwd"
+            style="@style/Whiteapplebold13"
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="472dp"
+            android:background="@drawable/large_button_type"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/find_passwd" />
+
+        <TextView
+            style="@style/Blacktwoappleregular12"
+            android:layout_width="237.5dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="64.5dp"
+            android:layout_marginTop="260dp"
+            android:text="@string/find_passwd_des" />
+    </RelativeLayout>
+</RelativeLayout>

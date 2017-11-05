@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.sk392.kr.carmony"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 23
+        versionName "1.0.0.22"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+repositories {
+    maven { url "http://dl.bintray.com/populov/maven" } // for viewpagerindicator
+    maven { url 'https://repo.commonsware.com.s3.amazonaws.com' } // for viewpagerindicator
+    maven { url "https://raw.githubusercontent.com/smilefam/SendBird-SDK-Android/master/" }
+    mavenCentral()
+    maven { url 'http://devrepo.kakao.com:8088/nexus/content/groups/public/' }//카카오톡
+    maven { url "https://jitpack.io" } // bottomDialog
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    // circleimage
+    //veiwpagerIndicator
+    //sendbird
+    //for Fcm and sendbird
+    //구글 제공, 이미지 로딩 및 캐시 관리
+    //마시멜로우 이상에서 권한 체크를 도와주는 라이브러리
+    // 카카오톡 sdk를 사용하기 위해 필요.
+    compile group: 'com.kakao.sdk', name: 'kakaotalk', version: project.KAKAO_SDK_VERSION
+    // 밑에서 위로 올라오는 다이얼로그. 차량모델 및 옵션 선택
+    compile 'jp.wasabeef:recyclerview-animators:2.2.6'
+    compile 'com.wdullaer:materialdatetimepicker:3.2.2'
+    compile 'com.google.firebase:firebase-messaging:9.8.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.githang:viewpagerindicator:2.4.2@aar'
+    compile 'com.sendbird.sdk:sendbird-android-sdk:3.0.4'
+    compile 'com.github.bumptech.glide:glide:3.6.0'
+    compile 'gun0912.ted:tedpermission:1.0.2'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'com.google.firebase:firebase-crash:9.8.0'
+    compile 'com.google.firebase:firebase-core:9.8.0'
+    compile 'com.google.android.gms:play-services-appindexing:9.8.0'
+    compile 'com.github.javiersantos:BottomDialogs:1.2.1'
+    compile 'com.github.amlcurran.showcaseview:library:5.4.3'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    provided 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sk392.kr.carmony">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".Library.Kakao.GlobalApplication"
+        android:allowBackup="true"
+        android:configChanges="keyboardHidden|orientation"
+        android:icon="@drawable/logo_carmony"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.IntroSplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.IntroTutorialActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.IntroLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.IntroSignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.IntroFindIdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.IntroFindPasswdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SearchResultDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.OwnerScheduleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ReservationDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.UserSetupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.UserContactChangeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.UserPasswdChangeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.UserEditingContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SearchSubwaySearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.OwnerProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.OwnerCarInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.OwnerCarInfoDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ReservationUserReviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ChatActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".Library.fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Library.fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Activity.ChatPaymentDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ChatPaymentActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="iamportnice" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.UserReviewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.OwnerScheduleAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.OwnerScheduleCarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ReservationOwnerReviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.UserCouponActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo_carmony" />
+
+        <activity android:name=".Activity.UserRegistLicenActvity" />
+        <activity android:name=".Activity.UserProfileActivity" />
+    </application>
+
+</manifest>

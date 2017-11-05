@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:paddingTop="30dp"
+        android:layout_width="match_parent"
+        android:paddingBottom="30dp"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+
+
+            <EditText
+                android:id="@+id/et_sign_name"
+                style="@style/Blackappleregular13"
+                android:layout_width="310dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/edittext_border"
+                android:hint="@string/hint_name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp"
+                android:windowSoftInputMode="adjustResize" />
+
+            <EditText
+                android:id="@+id/et_sign_email"
+                style="@style/Blackappleregular13"
+                android:layout_width="310dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="75dp"
+                android:background="@drawable/edittext_border"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp"
+                android:windowSoftInputMode="adjustResize" />
+
+            <RelativeLayout
+                android:id="@+id/rl_signup"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="133dp">
+
+                <RelativeLayout
+                    android:layout_width="310dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edittext_border">
+
+                    <EditText
+                        android:id="@+id/et_sign_phone"
+                        style="@style/Blackappleregular13"
+                        android:layout_width="210dp"
+                        android:layout_height="45dp"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/hint_phone_num"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="20dp"
+                        android:windowSoftInputMode="adjustResize" />
+
+                    <Button
+                        android:id="@+id/bt_sign_auth"
+                        style="@style/Whiteapplemedium13"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="210dp"
+                        android:background="@drawable/signup_button_background"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/hint_auth_num_send" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_sign_auth"
+                    android:layout_width="310dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/edittext_border"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/et_sign_auth_check"
+                        style="@style/Blackappleregular13"
+                        android:layout_width="210dp"
+                        android:layout_height="45dp"
+                        android:background="@android:color/transparent"
+                        android:hint="일련번호"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingLeft="15dp"
+                        android:windowSoftInputMode="adjustResize" />
+
+                    <Button
+                        android:id="@+id/bt_sign_auth_check"
+                        style="@style/Whiteapplemedium13"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="210dp"
+                        android:background="@drawable/signup_button_background"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/hint_auth_num_auth" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_signup"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/et_sign_passwd"
+                    style="@style/Blackappleregular13"
+                    android:layout_width="310dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edittext_border"
+                    android:hint="@string/hint_passwd_condition"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp"
+                    android:windowSoftInputMode="adjustResize" />
+
+                <EditText
+                    android:id="@+id/et_sign_re_passwd"
+                    style="@style/Blackappleregular13"
+                    android:layout_width="310dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="58dp"
+                    android:background="@drawable/edittext_border"
+                    android:hint="@string/hint_re_passwd"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

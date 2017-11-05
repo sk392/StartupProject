@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/view_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="40dp"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="199dp"
+            android:background="@drawable/edittext_border">
+
+            <EditText
+                android:id="@+id/et_change_after_contact"
+                style="@style/Blacktwoappleregular14"
+                android:layout_width="210dp"
+                android:layout_height="45dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/after_contact"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingLeft="15dp" />
+
+            <Button
+                android:id="@+id/bt_change_contact_auth"
+                style="@style/Whiteapplemedium13"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="210dp"
+                android:background="@drawable/signup_button_background"
+                android:enabled="false"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/hint_auth_num_auth" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_change_contact_auth"
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="254dp"
+            android:background="@drawable/edittext_border"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/et_change_contact_auth_check"
+                style="@style/Blackappleregular13"
+                android:layout_width="210dp"
+                android:layout_height="45dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/hint_phone_num"
+                android:inputType="number"
+                android:paddingLeft="15dp" />
+
+            <Button
+                android:id="@+id/bt_change_contact_auth_check"
+                style="@style/Whiteapplemedium13"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="210dp"
+                android:background="@drawable/signup_button_background"
+                android:enabled="false"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/hint_auth_num_auth" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_change_contact"
+            style="@style/Whiteapplebold13"
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="480dp"
+            android:background="@drawable/large_button_type"
+            android:enabled="false"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/contact_change"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:layout_alignBottom="@+id/relativeLayout2"
+            android:layout_alignLeft="@+id/relativeLayout2"
+            android:layout_alignStart="@+id/relativeLayout2"
+            android:layout_marginBottom="55dp"
+            android:background="@drawable/edittext_border">
+
+            <EditText
+                android:id="@+id/et_change_current_contact"
+                style="@style/Blacktwoappleregular14"
+                android:layout_width="310dp"
+                android:layout_height="45dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/current_contact"
+                android:inputType="number"
+                android:paddingLeft="15dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

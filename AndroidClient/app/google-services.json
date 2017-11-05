@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "371149537000",
+    "firebase_url": "https://carmony-31c31.firebaseio.com",
+    "project_id": "carmony-31c31",
+    "storage_bucket": "carmony-31c31.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371149537000:android:4cc285299fe682be",
+        "android_client_info": {
+          "package_name": "com.sk392.kr.carmony"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "371149537000-aaru09jqtialmk6dnckgd45tg85gi1d9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sk392.kr.carmony",
+            "certificate_hash": "36F379F0D1E29328E40F12F58276F3B2837AEE5C"
+          }
+        },
+        {
+          "client_id": "371149537000-e073iltj6qd1jh175826b1a581rtsnl1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCPueYpvyYxq4b8on8aZ1n29Vv25ZVZXQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "371149537000-e073iltj6qd1jh175826b1a581rtsnl1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

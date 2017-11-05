@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/view_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="56dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_user_profile_profile"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:src="@drawable/profile" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="123dp">
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/tv_user_profile_name"
+                style="@style/Blacktwoappleregular18"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:text="공유" />
+
+            <RatingBar
+                android:id="@+id/rb_user_profile_review"
+                style="@style/customRatingBarMedium"
+                android:layout_marginTop="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_user_profile_name"
+                android:layout_marginLeft="10dp"
+                android:isIndicator="true"
+                android:rating="5"
+                android:stepSize="0.5" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_user_profile_intro"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="158dp">
+
+            <TextView
+                android:id="@+id/tv_user_profile_intro"
+                android:layout_width="match_parent"
+                style="@style/Warmgreyappleregular14"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="안녕하세요." />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="310dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/rl_user_profile_intro"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ll_border_type3">
+
+            <RelativeLayout
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true">
+
+
+                <TextView
+                    android:id="@+id/tv_user_profile_res_num"
+                    style="@style/Blacktwoappleregular16"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="13dp"
+                    android:text="0" />
+
+                <TextView
+                    style="@style/Warmgreyappleregular14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="34dp"
+                    android:text="@string/res_num" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/white_six" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/tv_user_profile_mileage"
+                    android:textStyle="bold"
+                    style="@style/Blacktwoappleregular16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="13dp"
+                    android:text="0km" />
+
+                <TextView
+                    android:id="@+id/tv_user_profile_mileage_title"
+                    style="@style/Warmgreyappleregular14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="34dp"
+                    android:text="@string/car_miters" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/white_six" />
+
+                <TextView
+                    android:id="@+id/tv_user_profile_accident"
+                    style="@style/Blacktwoappleregular16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="13dp"
+                    android:text="0" />
+
+                <TextView
+                    style="@style/Warmgreyappleregular14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="34dp"
+                    android:text="@string/foul" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_user_profile_reviews"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/rl_user_profile_intro"
+            android:layout_marginTop="120dp"
+            android:gravity="center_vertical">
+
+
+            <TextView
+                style="@style/Blacktwoappleregular16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="25dp"
+                android:text="@string/review" />
+
+
+            <TextView
+                android:id="@+id/tv_user_profile_review_num"
+                style="@style/Blacktwoappleregular16"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="220dp" />
+
+            <RatingBar
+                android:id="@+id/rb_user_profile_reviews"
+                style="@style/customRatingBarMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_user_profile_review_num"
+                android:isIndicator="true"
+                android:rating="5"
+                android:stepSize="0.5" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="15.4dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/arrow_small_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white_six" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

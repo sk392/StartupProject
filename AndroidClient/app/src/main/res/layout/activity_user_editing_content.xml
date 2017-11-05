@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_editing_intro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/view_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingBottom="40dp">
+
+        <EditText
+            android:id="@+id/et_intro"
+            style="@style/Blackappleregular15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="75dp"
+            android:background="@drawable/ll_border_type1"
+            android:gravity="top"
+            android:hint="소개 내용을 작성해주세요"
+            android:inputType="textMultiLine"
+            android:maxLength="80"
+            android:maxLines="5"
+            android:minHeight="100dp"
+            android:padding="15dp"
+            android:textColorHint="@color/warm_grey">
+
+            <requestFocus />
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv_editing_intro_cnt"
+            style="@style/Warmgreyappleregular12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@id/et_intro"
+            android:layout_below="@id/et_intro"
+            android:layout_marginRight="25dp"
+            android:gravity="right"
+            android:text="(0/80)" />
+
+
+        <Button
+            android:id="@+id/bt_intro"
+            style="@style/Whiteapplebold13"
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="480dp"
+            android:background="@drawable/large_button_type"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/editing"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

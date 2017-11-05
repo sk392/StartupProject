@@ -1,0 +1,1018 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        layout="@layout/view_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_result_detail_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:background="@drawable/carinfo_default_image">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp_detail_car"
+                        android:layout_width="match_parent"
+                        android:layout_height="260dp" />
+
+                    <com.viewpagerindicator.CirclePageIndicator
+                        android:id="@+id/indicator_detail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="4dp"
+                        app:fillColor="@color/colorPrimaryDark"
+                        app:radius="4dp"
+                        app:strokeColor="@color/colorPrimary" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="260dp"
+                    android:background="@color/silver" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="261dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_detail_top_profile"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="15dp" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_owner_name"
+                        style="@style/Warmgreyappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="21dp"
+                        android:layout_toRightOf="@id/iv_detail_top_profile"
+                        android:text="카모니" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_car_model"
+                        style="@style/Blacktwoappleregular18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="43dp"
+                        android:text="K5" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_car_years"
+                        style="@style/Blacktwoappleregular18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="43dp"
+                        android:layout_toRightOf="@id/tv_detail_car_model"
+                        android:text="2016" />
+
+                    <TextView
+
+                        style="@style/Warmgreyappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="254dp"
+                        android:layout_marginTop="21dp"
+                        android:text="@string/ex_cost" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_cost"
+                        style="@style/Reddishorangeappleregular18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="254dp"
+                        android:layout_marginTop="45dp"
+                        android:text="0원" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="349dp"
+                    android:background="@color/pale_grey">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/silver" />
+
+                    <TextView
+                        style="@style/Slateblueappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/rent_date" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="397dp"
+                    android:background="@color/silver" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="114.5dp"
+                    android:layout_marginTop="398dp">
+
+                    <TextView
+                        style="@style/Blacktwoappleregular14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="20dp"
+                        android:text="대여" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_start_date"
+                        style="@style/Blacktwoappleregular14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="20dp"
+                        android:text="10월 13일 오후 3:00" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="59dp"
+                        android:background="@color/silver" />
+
+                    <TextView
+                        style="@style/Blacktwoappleregular14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="79dp"
+                        android:text="반납" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_end_date"
+                        style="@style/Blacktwoappleregular14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="79dp"
+                        android:text="10월 14일 오후 3:00" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="511.5dp"
+                    android:background="@color/silver" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="512.5dp"
+                    android:background="@color/pale_grey">
+
+                    <TextView
+                        style="@style/Slateblueappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/total_cost" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="561.5dp"
+                    android:background="@color/silver" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/relativeLayout">
+
+                    <TextView
+                        style="@style/Blacktwoappleregular16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="28.5dp"
+                        android:text="@string/all_cost"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_total_cost"
+                        style="@style/Reddishorangeappleregular18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="24dp" />
+
+                    <TextView
+                        style="@style/Blacktwoappleregular14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="55dp"
+                        android:text="@string/online_cost" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_online_cost"
+                        style="@style/Blacktwoappleregular14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="55dp" />
+
+                    <TextView
+                        style="@style/Blacktwoappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="79dp"
+                        android:text="@string/rental_cost" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_rental_cost"
+                        style="@style/Blacktwoappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="79dp"
+                        android:text="₩ 0" />
+
+                    <TextView
+                        style="@style/Blacktwoappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="98dp"
+                        android:text="@string/delivery_cost" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_delivery_cost"
+                        style="@style/Blacktwoappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="98dp" />
+
+                    <TextView
+                        style="@style/Blacktwoappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="117dp"
+                        android:text="@string/panel_cost" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_late_cost"
+                        style="@style/Blacktwoappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="117dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="155dp"
+                        android:background="@color/silver" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_detail_oneday_cost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="20dp"
+                        android:layout_marginTop="156dp">
+
+                        <TextView
+                            android:id="@+id/tv_detail_oneday_warning"
+                            style="@style/Reddishorangeappleregular13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="18dp"
+                            android:text="@string/oneday_warning" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="50dp"
+                            android:background="@color/silver" />
+
+                        <TextView
+                            style="@style/Blacktwoappleregular14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="70dp"
+                            android:text="@string/offline_cost" />
+
+                        <TextView
+                            android:id="@+id/tv_detail_offline_cost"
+                            style="@style/Blacktwoappleregular14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="70dp" />
+
+                        <TextView
+                            style="@style/Blacktwoappleregular12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="95dp"
+                            android:text="@string/oneday_cost" />
+
+
+                        <TextView
+                            android:id="@+id/tv_detail_oneday_cost"
+                            style="@style/Blacktwoappleregular12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="95dp"
+                            android:text="₩ 0" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_result_detail_top">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:background="@color/pale_grey">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/silver" />
+
+                    <TextView
+                        style="@style/Slateblueappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/car_descripttion" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="49dp"
+                    android:background="@color/silver" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_result_detail_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp">
+
+                    <TextView
+                        android:id="@+id/tv_detail_car_description"
+                        style="@style/Blacktwoappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="20dp"
+                        android:text="" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="254dp"
+                        android:layout_below="@id/tv_detail_car_description"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/ll_border_type1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="49dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/icon_year" />
+
+                            <TextView
+                                style="@style/Reddishorangeappleregular12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="23dp"
+                                android:text="@string/car_years" />
+
+                            <TextView
+                                android:id="@+id/tv_detail_info_car_years"
+                                style="@style/Blacktwoappleregular12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="2016년 3월" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="49dp"
+                            android:background="@color/white_six" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="49dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="50dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/icon_km" />
+
+                            <TextView
+                                style="@style/Reddishorangeappleregular12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="23dp"
+                                android:text="@string/car_miters" />
+
+                            <TextView
+                                android:id="@+id/tv_detail_info_car_miters"
+                                style="@style/Blacktwoappleregular12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="1만~2만km" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="99dp"
+                            android:background="@color/white_six" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="49dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="100dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/icon_fuel" />
+
+                            <TextView
+                                style="@style/Reddishorangeappleregular12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="23dp"
+                                android:text="@string/car_fuel" />
+
+                            <TextView
+                                android:id="@+id/tv_detail_info_car_fuel"
+                                style="@style/Blacktwoappleregular12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="휘발유" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="149dp"
+                            android:background="@color/white_six" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="49dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="150dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/icon_auto" />
+
+                            <TextView
+                                style="@style/Reddishorangeappleregular12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="23dp"
+                                android:text="@string/car_gear" />
+
+                            <TextView
+                                android:id="@+id/tv_detail_info_car_gear"
+                                style="@style/Blacktwoappleregular12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="오토" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="199dp"
+                            android:background="@color/white_six" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="49dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="200dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/icon_people" />
+
+
+                            <TextView
+                                style="@style/Reddishorangeappleregular12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="23dp"
+                                android:text="@string/car_seat" />
+
+                            <TextView
+                                android:id="@+id/tv_detail_info_car_seat"
+                                style="@style/Blacktwoappleregular12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="5인승" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_detail_option"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/tv_detail_car_description"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="274dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Blacktwoappleregular12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_dimens_small"
+                            android:layout_weight="1"
+                            android:text="@string/option" />
+
+                        <com.sk392.kr.carmony.Library.SquareImageView
+                            android:layout_width="11dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:src="@drawable/arrow_small_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/tv_detail_car_description"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="324dp"
+                        android:background="@color/silver" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_detail_reviews"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/tv_detail_car_description"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="325dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Blacktwoappleregular12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/activity_dimens_small"
+                            android:layout_weight="0.25"
+                            android:text="@string/car_reviews" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="0.65"
+                            android:gravity="center_vertical|right"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_detail_car_review_num"
+                                style="@style/Blacktwoappleregular12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <RatingBar
+                                android:id="@+id/rb_detail_car_review"
+                                style="@style/customRatingBarMedium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/activity_dimens_small"
+                                android:layout_marginTop="10dp"
+                                android:isIndicator="true"
+                                android:rating="2.5"
+                                android:stepSize="0.5" />
+
+                        </LinearLayout>
+
+                        <com.sk392.kr.carmony.Library.SquareImageView
+                            android:layout_width="11dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:src="@drawable/arrow_small_gray" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_below="@id/rl_result_detail_1"
+                    android:background="@color/pale_grey">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/silver" />
+
+                    <TextView
+                        style="@style/Slateblueappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/rental_condition" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/rl_result_detail_1"
+                    android:layout_marginTop="49dp"
+                    android:background="@color/silver" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/rl_result_detail_1"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="50dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_detail_delivery"
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Blacktwoappleregular12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_dimens_small"
+                            android:layout_weight="0.7"
+                            android:text="@string/is_delivery" />
+
+
+                        <TextView
+                            android:id="@+id/tv_detail_is_delivery"
+                            style="@style/Reddishorangeappleregular12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginRight="5dp"
+                            android:text="필수" />
+
+                        <com.sk392.kr.carmony.Library.SquareImageView
+                            android:layout_width="11dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:src="@drawable/arrow_small_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="49dp"
+                        android:background="@color/silver" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_detail_oneday"
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_marginTop="50dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Blacktwoappleregular12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_dimens_small"
+                            android:layout_weight="0.7"
+                            android:text="@string/is_oneday" />
+
+
+                        <TextView
+                            android:id="@+id/tv_detail_is_oneday"
+                            style="@style/Reddishorangeappleregular12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginRight="5dp"
+                            android:text="필수" />
+
+
+                        <com.sk392.kr.carmony.Library.SquareImageView
+                            android:layout_width="11dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:src="@drawable/arrow_small_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="99dp"
+                        android:background="@color/silver" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_detail_carmony_rule"
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_marginTop="100dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Blacktwoappleregular12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_dimens_small"
+                            android:layout_weight="1"
+                            android:text="@string/carmony_rule" />
+
+                        <com.sk392.kr.carmony.Library.SquareImageView
+                            android:layout_width="11dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:src="@drawable/arrow_small_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="149dp"
+                        android:background="@color/silver" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_detail_panalty"
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_marginTop="150dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Blacktwoappleregular12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_dimens_small"
+                            android:layout_weight="1"
+                            android:text="@string/car_rent_rule" />
+
+                        <com.sk392.kr.carmony.Library.SquareImageView
+                            android:layout_width="11dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:src="@drawable/arrow_small_gray" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_below="@id/rl_result_detail_1"
+                    android:layout_marginTop="250dp"
+                    android:background="@color/pale_grey">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/silver" />
+
+                    <TextView
+                        style="@style/Slateblueappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/owner_profile" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/rl_result_detail_1"
+                    android:layout_marginTop="299dp"
+                    android:background="@color/silver" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_result_detail_owner_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_below="@id/rl_result_detail_1"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="300dp">
+
+                    <TextView
+                        style="@style/Greyishappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="62.5dp"
+                        android:layout_marginTop="62dp"
+                        android:text="@string/owner" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_profile_owner_name"
+                        style="@style/Reddishorangeappleregular16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="57.5dp"
+                        android:layout_marginTop="38dp"
+                        android:text="카모니" />
+
+                    <TextView
+                        style="@style/Greyishappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="180dp"
+                        android:layout_marginTop="62dp"
+                        android:text="@string/owner_reviews" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_profile_score_num"
+                        style="@style/Blacktwoappleregular14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="150.5dp"
+                        android:layout_marginTop="40dp"
+                        android:text="0" />
+
+                    <RatingBar
+                        android:id="@+id/rb_detail_profile"
+                        style="@style/customRatingBarMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_toRightOf="@id/tv_detail_profile_score_num"
+                        android:isIndicator="true"
+                        android:rating="2.5"
+                        android:stepSize="0.5" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="268dp"
+                        android:layout_marginTop="37dp">
+
+                        <TextView
+                            style="@style/Greyishappleregular12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="25dp"
+                            android:text="@string/res_num" />
+
+                        <TextView
+                            android:id="@+id/tv_detail_profile_res_num"
+                            style="@style/Blacktwoappleregular18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="0" />
+                    </RelativeLayout>
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_detail_profile"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="33dp"
+                        android:src="@drawable/profile" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+    <Button
+        android:id="@+id/bt_result_detail_res"
+        style="@style/Whiteapplebold13"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/large_button_type"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/res_request" />
+
+</android.support.design.widget.CoordinatorLayout>

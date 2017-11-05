@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_toast_layout_fcm_message"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/toast_layout_main_background">
+
+    <TextView
+        android:id="@+id/tv_toast_layout_main_message"
+        style="@style/Whiteapplemedium13"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:padding="8dp"
+        android:layout_centerInParent="true"
+        android:text="메시지가 도착했습니다." />
+
+</RelativeLayout>

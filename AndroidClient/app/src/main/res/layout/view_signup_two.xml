@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:layout_width="310dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="97dp"
+                android:background="@drawable/edittext_border">
+
+                <EditText
+                    android:id="@+id/et_sign_path"
+                    style="@style/Blackappleregular13"
+                    android:layout_width="170dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@android:color/transparent"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:hint="@string/hint_signpath"
+                    android:maxLines="1"
+                    android:paddingRight="20dp"
+                    android:windowSoftInputMode="adjustResize" />
+
+                <RelativeLayout
+                    android:layout_width="130dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="180dp"
+                    android:background="@drawable/edittext_border">
+
+                    <Spinner
+                        android:id="@+id/sp_sign"
+                        android:layout_width="130dp"
+                        android:layout_height="45dp"
+                        android:entries="@array/sign_path" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/et_sign_recom"
+                style="@style/Blackappleregular13"
+                android:layout_width="310dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="155dp"
+                android:background="@drawable/edittext_border"
+                android:hint="@string/hint_recom"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:windowSoftInputMode="adjustResize" />
+
+            <RelativeLayout
+                android:id="@+id/rl_per_carmony_agree"
+                android:layout_width="310dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="230dp">
+
+                <CheckBox
+                    android:id="@+id/cb_per_carmony_agree"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginTop="1dp"
+                    android:text="카모니 이용 약관에 동의(필수)"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_per_agree"
+                android:layout_width="310dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="260dp">
+
+                <CheckBox
+                    android:id="@+id/cb_per_agree"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginTop="1dp"
+                    android:text="개인정보 수집/이용에 동의(필수)"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="310dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="290dp">
+
+                <CheckBox
+                    android:id="@+id/cb_push_agree"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp" />
+
+                <TextView
+                    android:id="@+id/tv_push_agree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginTop="1dp"
+                    android:text="쿠폰/혜택 알림에 동의(선택)" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

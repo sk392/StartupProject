@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_thumbnail"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#0F000000"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="17dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/carmony_logo" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_topic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="100dp"
+                    android:singleLine="true"
+                    style="@style/Blackappleregular15"
+                    android:text="Topic"
+                    />
+                <TextView
+                    android:id="@+id/txt_res_date"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    style="@style/Slateblueappleregular10"
+                    android:text="Topic"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="4dp"
+                    android:singleLine="true"
+                    style="@style/Warmgreyappleregular10"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top"
+                android:maxLines="2"
+                android:paddingRight="20dp"
+                android:text="Last Message."
+                style="@style/Warmgreyfourappleregular13"/>
+
+            <TextView
+                android:id="@+id/txt_unread_count"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/chat_bg_notify"
+                android:gravity="center"
+                android:text="99"
+                style="@style/Whiteapplemedium13"
+                android:layout_below="@+id/top"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

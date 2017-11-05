@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/view_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_owner_profile_profile"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:src="@drawable/profile" />
+        </RelativeLayout>
+
+        <TextView
+
+            android:id="@+id/tv_owner_profile_name"
+            style="@style/Blacktwoappleregular18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="122dp"
+            android:text="공유" />
+
+        <RatingBar
+            android:id="@+id/rb_owner_profile_review"
+            style="@style/customRatingBarMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="125dp"
+            android:layout_toRightOf="@id/tv_owner_profile_name"
+            android:isIndicator="true"
+            android:rating="5"
+            android:stepSize="0.5" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_owner_profile_intro"
+            android:layout_width="230dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="158dp">
+
+            <TextView
+                android:id="@+id/tv_owner_profile_intro"
+                style="@style/Warmgreyappleregular14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="공유란 ‘무언가를 함께 사용하는 것’입니다. 공간, 물건, 정보, 재능, 경험 등 우리가 소유한 모든 자원을 함께 나누고 사용함으로써 새로운 사회적·경제적·환경적 가치를 창출하는 활동을 말합니다." />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/activity_dimens_small"
+                android:layout_marginRight="@dimen/activity_dimens_small"
+                android:background="@drawable/ic_edit_black_24dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="310dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/rl_owner_profile_intro"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ll_border_type3">
+
+            <RelativeLayout
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true">
+
+
+                <TextView
+                    android:id="@+id/tv_owner_profile_res_num"
+                    style="@style/Blacktwoappleregular16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:layout_marginTop="13dp"
+                    android:text="0" />
+
+                <TextView
+                    style="@style/Warmgreyappleregular14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="34dp"
+                    android:text="@string/res_num" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/white_six" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/tv_owner_profile_score"
+                    style="@style/Blacktwoappleregular16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="13dp"
+                    android:text="0.0"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/Warmgreyappleregular14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="34dp"
+                    android:text="@string/score" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/white_six" />
+
+                <TextView
+                    android:id="@+id/tv_owner_profile_accident"
+                    style="@style/Blacktwoappleregular16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="13dp"
+                    android:text="0"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/Warmgreyappleregular14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="34dp"
+                    android:text="@string/foul" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_owner_profile_reviews"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/rl_owner_profile_intro"
+            android:layout_marginTop="120dp"
+            android:gravity="center_vertical">
+
+
+            <TextView
+                style="@style/Blacktwoappleregular16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:text="@string/review" />
+
+
+            <TextView
+                android:id="@+id/tv_owner_profile_review_num"
+                style="@style/Blacktwoappleregular16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="220dp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/rb_owner_profile_reviews"
+                style="@style/customRatingBarMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_owner_profile_review_num"
+                android:isIndicator="true"
+                android:rating="5"
+                android:stepSize="0.5" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="15.4dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/arrow_small_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="49dp"
+                android:background="@color/white_six" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

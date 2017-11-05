@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        layout="@layout/view_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rl_regist_licen_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal|center_vertical">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="165dp"
+            android:background="@drawable/img_licen" />
+
+        <View
+            android:id="@+id/view_regist_licen_num"
+            android:layout_width="160dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="26dp" />
+
+        <View
+            android:id="@+id/view_regist_licen_date"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="135dp" />
+
+        <View
+            android:id="@+id/view_regist_licen_secret_num"
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="115dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_regist_licen_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30dp"
+                android:paddingTop="30dp">
+
+
+                <EditText
+                    android:id="@+id/et_regist_licen_name"
+                    style="@style/Blackappleregular13"
+                    android:layout_width="310dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edittext_border"
+                    android:hint="@string/hint_real_name"
+                    android:inputType="text"
+                    android:maxLength="6"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp"
+                    android:textSize="@dimen/text_view_small"
+                    android:windowSoftInputMode="adjustResize" />
+
+                <TextView
+                    style="@style/Warmgreyappleregular11"
+                    android:layout_width="310dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="55dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/licen_num" />
+
+
+                <RelativeLayout
+                    android:layout_width="310dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="75dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="109dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edittext_border">
+
+                        <Spinner
+                            android:id="@+id/sp_licen"
+                            android:layout_width="109dp"
+                            android:layout_height="40dp"
+                            android:entries="@array/sign_licen_num" />
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:id="@+id/et_licen_num_one"
+                        style="@style/Blackappleregular13"
+                        android:layout_width="47dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="119dp"
+                        android:background="@drawable/edittext_border"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:paddingLeft="15dp"
+                        android:windowSoftInputMode="adjustResize" />
+
+
+                    <EditText
+                        android:id="@+id/et_licen_num_two"
+                        style="@style/Blackappleregular13"
+                        android:layout_width="77dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="176dp"
+                        android:background="@drawable/edittext_border"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:maxLines="1"
+                        android:paddingLeft="15dp"
+                        android:windowSoftInputMode="adjustResize" />
+
+                    <EditText
+                        android:id="@+id/et_licen_num_three"
+                        style="@style/Blackappleregular13"
+                        android:layout_width="47dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="263dp"
+                        android:background="@drawable/edittext_border"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:paddingLeft="15dp"
+                        android:windowSoftInputMode="adjustResize" />
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/et_regist_licen_birth"
+                    style="@style/Blackappleregular13"
+                    android:layout_width="310dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="125dp"
+                    android:background="@drawable/edittext_border"
+                    android:hint="@string/hint_birth"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp"
+                    android:textSize="@dimen/text_view_small"
+                    android:windowSoftInputMode="adjustResize" />
+
+
+                <EditText
+                    android:id="@+id/et_regist_licen_licen_num"
+                    style="@style/Blackappleregular13"
+                    android:layout_width="310dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="180dp"
+                    android:background="@drawable/edittext_border"
+                    android:hint="@string/hint_licennum"
+                    android:inputType="text"
+                    android:maxLength="6"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp"
+                    android:textSize="@dimen/text_view_small"
+                    android:windowSoftInputMode="adjustResize" />
+
+                <EditText
+                    android:id="@+id/et_regist_licen_licen_date"
+                    style="@style/Blackappleregular13"
+                    android:layout_width="310dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="235dp"
+                    android:background="@drawable/edittext_border"
+                    android:hint="@string/hint_licendate"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp"
+                    android:textSize="@dimen/text_view_small"
+                    android:windowSoftInputMode="adjustResize" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tv_regist_licen_hint"
+                    style="@style/Warmgreyappleregular13"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="285dp"
+                    android:layout_alignRight="@id/et_regist_licen_licen_date"
+                    android:text="@string/regist_licen_hint"/>
+            </RelativeLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/bt_regist_licen_regist"
+            style="@style/Reddishorangeappleregular13"
+            android:layout_width="310dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="45dp"
+            android:layout_marginTop="382dp"
+            android:background="@drawable/signup_button_type"
+            android:textColor="@drawable/signup_button_text_type"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/regist_licen" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

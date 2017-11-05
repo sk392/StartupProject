@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/view_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/edittext_border">
+
+        <EditText
+            android:id="@+id/et_change_current_pass"
+            style="@style/Blacktwoappleregular14"
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:background="@android:color/transparent"
+            android:hint="@string/current_passwd"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="199dp"
+        android:background="@drawable/edittext_border">
+
+        <EditText
+            android:id="@+id/et_change_after_pass"
+            style="@style/Blacktwoappleregular14"
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:background="@android:color/transparent"
+            android:hint="@string/after_passwd"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="254dp"
+        android:background="@drawable/edittext_border">
+
+        <EditText
+            android:id="@+id/et_change_after_re_pass"
+            style="@style/Blacktwoappleregular14"
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:background="@android:color/transparent"
+            android:hint="@string/hint_re_passwd"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp" />
+    </RelativeLayout>
+    <TextView
+        style="@style/Blacktwoappleregular12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginTop="316dp"
+        android:text="비밀번호는 영문/숫자 모두 포함되어야 됩니다.(8~20자이내)" />
+
+    <Button
+        android:id="@+id/bt_change_passwd"
+        style="@style/Whiteapplebold13"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="480dp"
+        android:background="@drawable/large_button_type"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/passwd_change"
+        android:textStyle="bold" />
+
+</RelativeLayout>

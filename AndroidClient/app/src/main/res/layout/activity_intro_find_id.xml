@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.sk392.kr.carmony.Activity.IntroSignupActivity">
+
+    <include
+        layout="@layout/view_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingBottom="40dp">
+
+        <RelativeLayout
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="197.5dp"
+            android:background="@drawable/edittext_border">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="9.5dp"
+                android:background="@drawable/phone_icon" />
+
+            <EditText
+                android:id="@+id/et_find_id"
+                style="@style/Blackappleregular13"
+                android:layout_width="252dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="55dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/hint_phone_num"
+                android:inputType="number" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_find_id"
+            style="@style/Whiteapplebold13"
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="472dp"
+            android:background="@drawable/large_button_type"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/find_id" />
+
+        <TextView
+            style="@style/Blacktwoappleregular12"
+            android:layout_width="231.5dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="64.5dp"
+            android:layout_marginTop="260dp"
+            android:text="@string/find_id_des_one" />
+
+        <TextView
+            style="@style/Warmgreyappleregular12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="84dp"
+            android:layout_marginTop="284.5dp"
+            android:text="@string/find_id_des_two" />
+
+    </RelativeLayout>
+</RelativeLayout>

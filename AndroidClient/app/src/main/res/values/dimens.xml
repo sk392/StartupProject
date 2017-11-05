@@ -1,0 +1,40 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_dimens">14dp</dimen>
+    <dimen name="activity_dimens_small">7dp</dimen>
+    <dimen name="activity_dimens_xsmall">3dp</dimen>
+    <dimen name="activity_dimens_large">32dp</dimen>
+    <dimen name="activity_dimens_xlarge">48dp</dimen>
+    <dimen name="ratingbar_height">25dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="dialog_size_height">500dp</dimen>
+    <dimen name="button_width">120dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="button_width_large">230dp</dimen>
+    <dimen name="button_height_large">50dp</dimen>
+    <dimen name="button_width_xlarge">280dp</dimen>
+    <dimen name="button_height_xlarge">60dp</dimen>
+    <dimen name="button_width_small">60dp</dimen>
+    <dimen name="fcm_message_width">300dp</dimen>
+    <dimen name="fcm_message_height">60dp</dimen>
+    <dimen name="button_height_small">30dp</dimen>
+    <dimen name="appbar_padding_top">4dp</dimen>
+    <dimen name="actionbar_size">50dp</dimen>
+    <dimen name="bottombar_size">48dp</dimen>
+    <dimen name="bottom_actionbar_size">98dp</dimen>
+    <dimen name="text_view_small">12dp</dimen>
+    <dimen name="text_view_xsmall">10dp</dimen>
+    <dimen name="text_view_xxsmall">8dp</dimen>
+    <dimen name="text_view">16dp</dimen>
+    <dimen name="text_view_large">20dp</dimen>
+    <dimen name="text_view_xlarge">24dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="schedule_item_width">40dp</dimen>
+    <dimen name="schedule_item_width_top">40.5dp</dimen>
+    <dimen name="schedule_item_height">34dp</dimen>
+    <dimen name="schedule_item_height_item">34dp</dimen>
+    <dimen name="schedule_item_height_item_top">34.5dp</dimen>
+    <dimen name="schedule_item_height_subject">70.5dp</dimen>
+</resources>

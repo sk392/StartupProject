@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sk392.kr.carmony.Activity.OwnerScheduleActivity">
+
+    <include
+        layout="@layout/view_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="48dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/ll_onwer_schedule"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/schedule_item_width"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/schedule_item_height_subject" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginBottom="25dp"
+                        android:background="@color/silver" />
+
+                    <TextView
+                        style="@style/Pinkishgreytwoappleregular12"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/schedule_item_height"
+                        android:layout_marginBottom="0.5dp"
+                        android:gravity="center_horizontal"
+                        android:text="8 AM" />
+
+
+                    <TextView
+                        style="@style/Pinkishgreytwoappleregular12"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/schedule_item_height"
+                        android:layout_marginBottom="0.5dp"
+                        android:gravity="center_horizontal"
+                        android:text="9 AM" />
+
+                    <TextView
+                        style="@style/Pinkishgreytwoappleregular12"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/schedule_item_height"
+                        android:layout_marginBottom="0.5dp"
+                        android:gravity="center_horizontal"
+                        android:text="10 AM" />
+
+
+                    <TextView
+                        style="@style/Pinkishgreytwoappleregular12"
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/schedule_item_height"
+                        android:layout_marginBottom="0.5dp"
+                        android:gravity="center_horizontal"
+                        android:text="11 AM" />
+
+
+                    <TextView
+                        style="@style/Pinkishgreytwoappleregular12"
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/schedule_item_height"
+                        android:layout_marginBottom="0.5dp"
+                        android:gravity="center_horizontal"
+                        android:text="12 PM" />
+
+
+                    <TextView
+                        style="@style/Pinkishgreytwoappleregular12"
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/schedule_item_height"
+                        android:layout_marginBottom="0.5dp"
+                        android:gravity="center_horizontal"
+                        android:text="1 PM" />
+
+
+                    <TextView
+                        style="@style/Pinkishgreytwoappleregular12"
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/schedule_item_height"
+                        android:layout_marginBottom="0.5dp"
+                        android:gravity="center_horizontal"
+                        android:text="2 PM" />
+
+
+                    <TextView
+                        style="@style/Pinkishgreytwoappleregular12"
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/schedule_item_height"
+                        android:layout_marginBottom="0.5dp"
+                        android:gravity="center_horizontal"
+                        android:text="3 PM" />
+
+                    <TextView
+                        style="@style/Pinkishgreytwoappleregular12"
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/schedule_item_height"
+                        android:layout_marginBottom="0.5dp"
+                        android:gravity="center_horizontal"
+                        android:text="4 PM" />
+
+                    <TextView
+                        style="@style/Pinkishgreytwoappleregular12"
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/schedule_item_height"
+                        android:layout_marginBottom="0.5dp"
+                        android:gravity="center_horizontal"
+                        android:text="5 PM" />
+
+
+                    <TextView
+                        style="@style/Pinkishgreytwoappleregular12"
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/schedule_item_height"
+                        android:layout_marginBottom="0.5dp"
+                        android:gravity="center_horizontal"
+                        android:text="6 PM" />
+
+
+                    <TextView
+                        style="@style/Pinkishgreytwoappleregular12"
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/schedule_item_height"
+                        android:layout_marginBottom="0.5dp"
+                        android:gravity="center_horizontal"
+                        android:text="7 PM" />
+
+                    <TextView
+                        style="@style/Pinkishgreytwoappleregular12"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/schedule_item_height"
+                        android:layout_marginBottom="0.5dp"
+                        android:gravity="center_horizontal"
+                        android:text="8 PM" />
+
+                    <TextView
+                        style="@style/Pinkishgreytwoappleregular12"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/schedule_item_height"
+                        android:layout_marginBottom="0.5dp"
+                        android:gravity="center_horizontal"
+                        android:text="9 PM" />
+
+                    <TextView
+                        style="@style/Pinkishgreytwoappleregular12"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/schedule_item_height"
+                        android:layout_marginBottom="0.5dp"
+                        android:gravity="center_horizontal"
+                        android:text="10 PM" />
+
+                    <TextView
+                        style="@style/Pinkishgreytwoappleregular12"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/schedule_item_height"
+                        android:layout_marginBottom="0.5dp"
+                        android:gravity="center_horizontal"
+                        android:text="11 PM" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/silver" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_owner_schedule"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

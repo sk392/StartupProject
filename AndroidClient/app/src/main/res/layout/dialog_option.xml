@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_optiondialog_title"
+        style="@style/Darkgreyblueapplebold17"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/app_name"
+        android:textColor="@color/dark_grey_blue"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="49dp"
+        android:background="@color/warm_grey" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_option_alert"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/bt_option_dialog"
+        style="@style/Whiteapplebold13"
+        android:layout_width="match_parent"
+        android:layout_marginTop="405dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="40dp"
+        android:background="@drawable/large_button_type"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="옵션 추가" />
+</RelativeLayout>

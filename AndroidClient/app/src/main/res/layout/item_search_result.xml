@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="362dp"
+    android:background="@color/white">
+
+    <View
+        android:layout_width="360dp"
+        android:layout_height="312dp"/>
+
+    <ImageView
+        android:id="@+id/iv_item_car"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="320dp"
+        android:layout_height="174dp" />
+
+    <RelativeLayout
+        android:layout_width="190dp"
+        android:layout_height="71.5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="250dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_item_profile"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="9dp" />
+
+        <TextView
+            android:id="@+id/tv_resultitem_owner_name"
+            style="@style/Warmgreyappleregular13"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@id/iv_item_profile"
+            android:gravity="bottom"
+            android:text="carmony" />
+
+        <LinearLayout
+            android:layout_width="208dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="38dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_resultitem_car_model"
+                style="@style/Blacktwoappleregular18"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp" />
+
+            <TextView
+                android:id="@+id/tv_resultitem_car_years"
+                style="@style/Blacktwoappleregular18"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:paddingLeft="@dimen/activity_dimens_small" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="71.5dp"
+        android:layout_marginLeft="244dp"
+        android:layout_marginTop="250dp">
+
+
+        <TextView
+            style="@style/Warmgreyappleregular12"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_marginTop="14.5dp"
+            android:text="@string/ex_cost" />
+
+
+        <TextView
+            android:id="@+id/tv_ex_cost"
+            style="@style/Reddishorangeappleregular18"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="36dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="310dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="321dp"
+        android:background="@color/white_six" />
+
+    <RelativeLayout
+        android:layout_width="295dp"
+        android:layout_height="45.5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="321dp">
+
+        <TextView
+
+            style="@style/Warmgreythreeappleregular11"
+            android:layout_width="wrap_content"
+            android:layout_height="13.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/car_reviews" />
+
+        <RatingBar
+            android:id="@+id/rb_item_car"
+            style="@style/customRatingBarMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="57.3dp"
+            android:layout_marginTop="16dp"
+            android:isIndicator="true"
+            android:rating="2.5"
+            android:stepSize="0.5" />
+
+        <TextView
+            style="@style/Warmgreythreeappleregular11"
+            android:layout_width="wrap_content"
+            android:layout_height="13.5dp"
+            android:layout_marginLeft="158dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/owner_reviews" />
+
+        <RatingBar
+            android:id="@+id/rb_item_person"
+            style="@style/customRatingBarMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="203.3dp"
+            android:layout_marginTop="16dp"
+            android:isIndicator="true"
+            android:rating="2.5"
+            android:stepSize="0.5" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_six" />
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp">
+
+
+    <ImageView
+        android:id="@+id/iv_res_item_car"
+        android:layout_width="90dp"
+        android:layout_height="65dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="22dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_res_item_res_start"
+            style="@style/Paleskyblueappleregular12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+
+            style="@style/Paleskyblueappleregular12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - " />
+
+        <TextView
+            android:id="@+id/tv_res_item_res_end"
+            style="@style/Paleskyblueappleregular12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="39dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_res_item_car_model"
+            style="@style/Blackhelveregular15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_res_item_car_year"
+            style="@style/Blackappleregular15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_reservation_item_child"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:background="#50ffffff"
+        android:visibility="invisible"></RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/white_six"
+        android:layout_marginTop="84.5dp"/>
+</RelativeLayout>

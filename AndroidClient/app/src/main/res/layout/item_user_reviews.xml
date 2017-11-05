@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_review_item_profile"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"/>
+
+    <TextView
+        android:id="@+id/tv_review_item_content"
+        style="@style/Blackappleregular13"
+        android:layout_marginTop="74dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="26dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_review_item_name"
+            style="@style/Warmgreyappleregular12"
+            android:layout_width="wrap_content"
+            android:text="라떼"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" />
+
+        <TextView
+            style="@style/Warmgreyappleregular12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text=" - " />
+
+        <TextView
+            android:id="@+id/tv_review_item_date"
+            style="@style/Warmgreyappleregular12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+    <RatingBar
+        android:id="@+id/rb_reviews_item"
+        style="@style/customRatingBarMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:layout_marginTop="46dp"
+        android:layout_marginLeft="66.5dp"
+        android:rating="2.5"
+        android:stepSize="0.5" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_review_item_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@color/white_six" />
+</RelativeLayout>
+

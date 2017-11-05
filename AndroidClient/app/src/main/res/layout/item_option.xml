@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="70dp"
+    android:layout_height="80dp"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_dimens_small">
+
+    <ImageView
+        android:id="@+id/iv_option_item"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:src="@drawable/sencer"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_option_item"
+        style="@style/OptionItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/empty_option" />
+</LinearLayout>

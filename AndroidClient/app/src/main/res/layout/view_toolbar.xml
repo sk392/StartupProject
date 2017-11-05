@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appbar"
+    app:elevation="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/introtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:id="@+id/tv_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="@string/app_name"
+            style="@style/Darkgreyblueapplebold17"
+            android:textStyle="bold"
+            android:textColor="@color/dark_grey_blue"/>
+
+        <com.sk392.kr.carmony.Library.SquareImageButton
+            android:id="@+id/ib_toolbar_reservation"
+            android:layout_marginRight="@dimen/activity_dimens"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/activity_dimens_small"
+            android:background="@drawable/change_icon"
+            android:visibility="gone" />
+
+        <com.sk392.kr.carmony.Library.SquareImageButton
+            android:id="@+id/ib_toolbar_user"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/activity_dimens"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/activity_dimens_small"
+            android:visibility="gone" />
+
+        <com.sk392.kr.carmony.Library.SquareImageButton
+            android:id="@+id/ib_toolbar_carinfo"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/activity_dimens_small"
+            android:layout_marginRight="@dimen/activity_dimens"
+            android:layout_marginTop="@dimen/activity_dimens_small"
+            android:visibility="gone" />
+
+        <com.sk392.kr.carmony.Library.SquareImageButton
+            android:id="@+id/ib_toolbar_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_dimens"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/activity_dimens_small"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/bt_toolbar_chat"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="14dp"
+            android:drawableLeft="@drawable/check"
+            android:text="확정"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:gravity="center_horizontal|center_vertical"
+            style="@style/Reddishorangeappleregular16"
+            android:visibility="gone" />
+
+        <com.sk392.kr.carmony.Library.SquareImageButton
+            android:id="@+id/ib_toolbar_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/activity_dimens_small"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/plus_icon"
+            android:visibility="gone" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/white_six"/>
+</android.support.design.widget.AppBarLayout>

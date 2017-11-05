@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\SK392\.android\build-cache\27a0c33cd025099da4ccbc0ec1585186177f7125\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="189cdb5ed1f6c37a6c327b3a220ad1bb95bb64f1">
+        <dex dex="C:\Users\SK392\Desktop\Carmony\Project\AndroidClient\app\build\intermediates\pre-dexed\debug\classes_d4449ca86bf647bf536933a605d1d0b77a09cd94.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\SK392\Desktop\Carmony\Project\AndroidClient\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6e6ed17eace4da9251524f9d3c3d46bb3bc75dfa">
+        <dex dex="C:\Users\SK392\Desktop\Carmony\Project\AndroidClient\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_9c98cff2467dfc67019ad980a2f612b3a713ba10\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\SK392\.android\build-cache\27a0c33cd025099da4ccbc0ec1585186177f7125\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="189cdb5ed1f6c37a6c327b3a220ad1bb95bb64f1">
+        <dex dex="C:\Users\SK392\Desktop\Carmony\Project\AndroidClient\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d4449ca86bf647bf536933a605d1d0b77a09cd94\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SK392\.android\build-cache\584b2793b73756490167db58a34e6ac3ae26b1c6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8531f2d46b35de75e6130f25830e0c2c0d6bb98c">
+        <dex dex="C:\Users\SK392\Desktop\Carmony\Project\AndroidClient\app\build\intermediates\pre-dexed\debug\classes_983422ea2b878eded03d4295410c595d35baeea7.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\SK392\Desktop\Carmony\Project\AndroidClient\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\SK392\Desktop\Carmony\Project\AndroidClient\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_9bd0d2141d4e4b47df12a0d3305e070f9f04fa5f\classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="@dimen/schedule_item_width_top"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="@dimen/schedule_item_width_top"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/schedule_item_width"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/schedule_item_height_subject"
+                android:paddingTop="@dimen/activity_dimens_xsmall" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/silver" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/schedule_item_height_item"
+                android:background="@color/schedulenonBlock" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/silver" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/schedule_item_height_item"
+                android:background="@color/schedulenonBlock" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/silver" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/schedule_item_height_item"
+                android:background="@color/schedulenonBlock" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/silver" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/schedule_item_height_item"
+                android:background="@color/schedulenonBlock" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/silver" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/schedule_item_height_item"
+                android:background="@color/schedulenonBlock" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/silver" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/schedule_item_height_item"
+                android:background="@color/schedulenonBlock" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/silver" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/schedule_item_height_item"
+                android:background="@color/schedulenonBlock" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/silver" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/schedule_item_height_item"
+                android:background="@color/schedulenonBlock" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/silver" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/schedule_item_height_item"
+                android:background="@color/schedulenonBlock" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/silver" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/schedule_item_height_item"
+                android:background="@color/schedulenonBlock" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/silver" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/schedule_item_height_item"
+                android:background="@color/schedulenonBlock" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/silver" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/schedule_item_height_item"
+                android:background="@color/schedulenonBlock" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/silver" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/schedule_item_height_item"
+                android:background="@color/schedulenonBlock" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/silver" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/schedule_item_height_item"
+                android:background="@color/schedulenonBlock" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/silver" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/schedule_item_height_item"
+                android:background="@color/schedulenonBlock" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/silver" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/schedule_item_height_item"
+                android:background="@color/schedulenonBlock" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/silver" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/silver" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/schedule_item_width_top"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="@dimen/schedule_item_width_top"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="@dimen/schedule_item_width_top"
+                android:orientation="vertical"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_height="@dimen/schedule_item_height_subject">
+
+                <TextView
+                    android:id="@+id/tv_schedule_item_date_month"
+                    style="@style/Warmgreyapple15"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/activity_dimens_xsmall"
+                    android:layout_height="wrap_content"
+                    android:text="9/1" />
+                <TextView
+                    android:id="@+id/tv_schedule_item_date_day"
+                    style="@style/Blackappleregular25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="9/1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/schedule_item_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/ll_border_type2"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/hour_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/schedule_item_height_item_top"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/schedulenonBlock"
+                    android:visibility="invisible" />
+
+                <View
+                    android:id="@+id/hour_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/schedule_item_height_item_top"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/schedulenonBlock"
+                    android:visibility="invisible" />
+
+
+                <View
+                    android:id="@+id/hour_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/schedule_item_height_item_top"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/schedulenonBlock"
+                    android:visibility="invisible" />
+
+                <View
+                    android:id="@+id/hour_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/schedule_item_height_item_top"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/schedulenonBlock"
+                    android:visibility="invisible" />
+
+                <View
+                    android:id="@+id/hour_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/schedule_item_height_item_top"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/schedulenonBlock"
+                    android:visibility="invisible" />
+
+
+                <View
+                    android:id="@+id/hour_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/schedule_item_height_item_top"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/schedulenonBlock"
+                    android:visibility="invisible" />
+
+                <View
+                    android:id="@+id/hour_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/schedule_item_height_item_top"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/schedulenonBlock"
+                    android:visibility="invisible" />
+
+
+                <View
+                    android:id="@+id/hour_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/schedule_item_height_item_top"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/schedulenonBlock"
+                    android:visibility="invisible" />
+
+
+                <View
+                    android:id="@+id/hour_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/schedule_item_height_item_top"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/schedulenonBlock"
+                    android:visibility="invisible" />
+
+                <View
+                    android:id="@+id/hour_17"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/schedule_item_height_item_top"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/schedulenonBlock"
+                    android:visibility="invisible" />
+
+                <View
+                    android:id="@+id/hour_18"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/schedule_item_height_item_top"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/schedulenonBlock"
+                    android:visibility="invisible" />
+
+
+                <View
+                    android:id="@+id/hour_19"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/schedule_item_height_item_top"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/schedulenonBlock"
+                    android:visibility="invisible" />
+
+                <View
+                    android:id="@+id/hour_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/schedule_item_height_item_top"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/schedulenonBlock"
+                    android:visibility="invisible" />
+
+
+                <View
+                    android:id="@+id/hour_21"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/schedule_item_height_item_top"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/schedulenonBlock"
+                    android:visibility="invisible" />
+
+
+                <View
+                    android:id="@+id/hour_22"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/schedule_item_height_item_top"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/schedulenonBlock"
+                    android:visibility="invisible" />
+
+
+                <View
+                    android:id="@+id/hour_23"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/schedule_item_height_item_top"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/schedulenonBlock"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/silver" />
+    </LinearLayout>
+</RelativeLayout>

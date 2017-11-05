@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        layout="@layout/view_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/carinfo_default_image"
+                android:layout_height="260dp">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_owner_car_info_detail_car"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp" />
+
+                <com.viewpagerindicator.CirclePageIndicator
+
+                    android:id="@+id/indicator_owner_car_info_detail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="4dp"
+                    app:fillColor="@color/colorPrimaryDark"
+                    app:radius="4dp"
+                    app:strokeColor="@color/colorPrimary" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="260dp"
+                android:background="@color/pale_grey">
+
+                <TextView
+                    style="@style/Slateblueappleregular12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/car_descripttion" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="309dp"
+                android:background="@color/silver" />
+
+            <RelativeLayout
+                android:id="@+id/rl_result_owner_car_info_detail_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="310dp">
+
+                <TextView
+                    android:id="@+id/tv_owner_car_info_detail_car_description"
+                    style="@style/Blacktwoappleregular12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="20dp"
+                    android:text="" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="254dp"
+                    android:layout_below="@id/tv_owner_car_info_detail_car_description"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ll_border_type1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/icon_year" />
+
+                        <TextView
+                            style="@style/Reddishorangeappleregular12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="23dp"
+                            android:text="@string/car_years" />
+
+                        <TextView
+                            android:id="@+id/tv_owner_car_info_detail_info_car_years"
+                            style="@style/Blacktwoappleregular12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="2016년 3월" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="49dp"
+                        android:background="@color/white_six" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="50dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/icon_km" />
+
+                        <TextView
+                            style="@style/Reddishorangeappleregular12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="23dp"
+                            android:text="@string/car_miters" />
+
+                        <TextView
+                            android:id="@+id/tv_owner_car_info_detail_info_car_miters"
+                            style="@style/Blacktwoappleregular12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="1만~2만km" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="99dp"
+                        android:background="@color/white_six" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="100dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/icon_fuel" />
+
+                        <TextView
+                            style="@style/Reddishorangeappleregular12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="23dp"
+                            android:text="@string/car_fuel" />
+
+                        <TextView
+                            android:id="@+id/tv_owner_car_info_detail_info_car_fuel"
+                            style="@style/Blacktwoappleregular12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="휘발유" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="149dp"
+                        android:background="@color/white_six" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="150dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/icon_auto" />
+
+                        <TextView
+                            style="@style/Reddishorangeappleregular12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="23dp"
+                            android:text="@string/car_gear" />
+
+                        <TextView
+                            android:id="@+id/tv_owner_car_info_detail_info_car_gear"
+                            style="@style/Blacktwoappleregular12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="오토" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="199dp"
+                        android:background="@color/white_six" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="200dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/icon_people" />
+
+
+                        <TextView
+                            style="@style/Reddishorangeappleregular12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="23dp"
+                            android:text="@string/car_seat" />
+
+                        <TextView
+                            android:id="@+id/tv_owner_car_info_detail_info_car_seat"
+                            style="@style/Blacktwoappleregular12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="5인승" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_owner_car_info_detail_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/tv_owner_car_info_detail_car_description"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="274dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Blacktwoappleregular12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_dimens_small"
+                        android:layout_weight="1"
+                        android:text="@string/option" />
+
+                    <com.sk392.kr.carmony.Library.SquareImageView
+                        android:layout_width="11dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/arrow_small_gray" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tv_owner_car_info_detail_car_description"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="324dp"
+                    android:background="@color/silver" />
+
+                <LinearLayout
+                    android:id="@+id/ll_owner_car_info_detail_reviews"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/tv_owner_car_info_detail_car_description"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="325dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Blacktwoappleregular12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.25"
+                        android:text="@string/car_reviews" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.65"
+                        android:gravity="center_vertical|right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_owner_car_info_detail_car_review_num"
+                            style="@style/Blacktwoappleregular12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <RatingBar
+                            android:id="@+id/rb_owner_car_info_detail_car_review"
+                            style="@style/customRatingBarMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginLeft="@dimen/activity_dimens_small"
+                            android:isIndicator="true"
+                            android:rating="2.5"
+                            android:stepSize="0.5" />
+
+                    </LinearLayout>
+
+                    <com.sk392.kr.carmony.Library.SquareImageView
+                        android:layout_width="11dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/arrow_small_gray" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_below="@id/rl_result_owner_car_info_detail_1"
+                android:background="@color/pale_grey">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/silver" />
+
+                <TextView
+                    style="@style/Slateblueappleregular12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/rental_condition" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/rl_result_owner_car_info_detail_1"
+                android:layout_marginTop="49dp"
+                android:background="@color/silver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_below="@id/rl_result_owner_car_info_detail_1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="50dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_owner_car_info_detail_delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Blacktwoappleregular12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_dimens_small"
+                        android:layout_weight="0.7"
+                        android:text="@string/is_delivery" />
+
+
+                    <TextView
+                        android:id="@+id/tv_owner_car_info_detail_is_delivery"
+                        style="@style/Reddishorangeappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:text="필수" />
+
+                    <com.sk392.kr.carmony.Library.SquareImageView
+                        android:layout_width="11dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/arrow_small_gray" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="49dp"
+                    android:background="@color/silver" />
+
+                <LinearLayout
+                    android:id="@+id/ll_owner_car_info_detail_oneday"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Blacktwoappleregular12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_dimens_small"
+                        android:layout_weight="0.7"
+                        android:text="@string/is_oneday" />
+
+
+                    <TextView
+                        android:id="@+id/tv_owner_car_info_detail_is_oneday"
+                        style="@style/Reddishorangeappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:text="필수" />
+
+
+                    <com.sk392.kr.carmony.Library.SquareImageView
+                        android:layout_width="11dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/arrow_small_gray" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="99dp"
+                    android:background="@color/silver" />
+
+                <LinearLayout
+                    android:id="@+id/ll_owner_car_info_detail_carmony_rule"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="100dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Blacktwoappleregular12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_dimens_small"
+                        android:layout_weight="1"
+                        android:text="@string/carmony_rule" />
+
+                    <com.sk392.kr.carmony.Library.SquareImageView
+                        android:layout_width="11dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/arrow_small_gray" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="149dp"
+                    android:background="@color/silver" />
+
+                <LinearLayout
+                    android:id="@+id/ll_owner_car_info_detail_panalty"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="150dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Blacktwoappleregular12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_dimens_small"
+                        android:layout_weight="1"
+                        android:text="@string/car_rent_rule" />
+
+                    <com.sk392.kr.carmony.Library.SquareImageView
+                        android:layout_width="11dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/arrow_small_gray" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

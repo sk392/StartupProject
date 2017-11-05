@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent" />
+
+    <TextView
+        style="@style/Darkgreyblueapplebold17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="@string/signup_carmony_rule"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white_six" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="435dp"
+        android:layout_marginTop="40dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_carmony_rule_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="25dp">
+
+            <View
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/pinkish_grey" />
+
+            <TextView
+                style="@style/Warmgreyappleregular13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="@string/alert_signup_rule_discription1" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_alert_signup_carmony_rule_close"
+        style="@style/Whiteapplemedium13"
+        android:layout_width="295dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="485dp"
+        android:background="@drawable/large_button_type"
+        android:text="동의하기" />
+</RelativeLayout>

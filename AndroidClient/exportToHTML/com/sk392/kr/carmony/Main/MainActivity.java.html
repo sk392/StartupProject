@@ -1,0 +1,208 @@
+<html>
+<head>
+<title>MainActivity.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { color: rgb(0,0,0); }
+.s2 { color: rgb(0,128,0); font-weight: bold; }
+.s3 { color: rgb(0,0,255); }
+.s4 { color: rgb(128,128,128); font-style: italic; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+MainActivity.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">package </span><span class="s1">com.sk392.kr.carmony.Main; 
+ 
+</span><span class="s0">import </span><span class="s1">android.content.Context; 
+</span><span class="s0">import </span><span class="s1">android.os.Bundle; 
+</span><span class="s0">import </span><span class="s1">android.support.design.widget.AppBarLayout; 
+</span><span class="s0">import </span><span class="s1">android.support.design.widget.TabLayout; 
+</span><span class="s0">import </span><span class="s1">android.support.v7.app.AppCompatActivity; 
+</span><span class="s0">import </span><span class="s1">android.support.v7.widget.Toolbar; 
+</span><span class="s0">import </span><span class="s1">android.view.View; 
+</span><span class="s0">import </span><span class="s1">android.widget.Button; 
+</span><span class="s0">import </span><span class="s1">android.widget.ImageButton; 
+</span><span class="s0">import </span><span class="s1">android.widget.TextView; 
+</span><span class="s0">import </span><span class="s1">android.widget.Toast; 
+ 
+</span><span class="s0">import </span><span class="s1">com.sk392.kr.carmony.Library.BackPressClosehHandler;
+</span><span class="s0">import </span><span class="s1">com.sk392.kr.carmony.Library.NonSwipeViewPager; 
+</span><span class="s0">import </span><span class="s1">com.sk392.kr.carmony.R;
+
+</span><span class="s0">public class </span><span class="s1">MainActivity </span><span class="s0">extends </span><span class="s1">AppCompatActivity { 
+    </span><span class="s0">public static final </span><span class="s1">String URL_AUTH = </span><span class="s2">&quot;https://14.63.225.26:27443/api/user_auth.php&quot;</span><span class="s1">; 
+    </span><span class="s0">public static final </span><span class="s1">String URL_USER_INFO = </span><span class="s2">&quot;http://14.63.225.26:2780/api/get_user_info.php&quot;</span><span class="s1">; 
+    </span><span class="s0">public static final </span><span class="s1">String SHARED_MAIN_NAME=</span><span class="s2">&quot;sharedsk!mainname&quot;</span><span class="s1">; 
+    </span><span class="s0">public static final </span><span class="s1">String SHARED_TOKEN=</span><span class="s2">&quot;sharedsk!token&quot;</span><span class="s1">; 
+    </span><span class="s0">public static final </span><span class="s1">String SHARED_EMAIL=</span><span class="s2">&quot;sharedsk!email&quot;</span><span class="s1">; 
+    </span><span class="s0">public static final </span><span class="s1">String SHARED_NAME=</span><span class="s2">&quot;sharedsk!name&quot;</span><span class="s1">; 
+    </span><span class="s0">public static final </span><span class="s1">String SHARED_TYPE=</span><span class="s2">&quot;sharedsk!type&quot;</span><span class="s1">; 
+    </span><span class="s0">public static final </span><span class="s1">String SHARED_USER_ID=</span><span class="s2">&quot;sharedsk!userid&quot;</span><span class="s1">; 
+    </span><span class="s0">public static final </span><span class="s1">String SHARED_CONTENT=</span><span class="s2">&quot;sharedsk!content&quot;</span><span class="s1">; 
+    </span><span class="s0">public static final </span><span class="s1">String SHARED_IS_FACE=</span><span class="s2">&quot;sharedsk!isface&quot;</span><span class="s1">; 
+    </span><span class="s0">public static final </span><span class="s1">String SHARED_USER_REVIEW_CNT=</span><span class="s2">&quot;sharedsk!userreviewcnt&quot;</span><span class="s1">; 
+    </span><span class="s0">public static final </span><span class="s1">String SHARED_USER_REVIEW_SCORE=</span><span class="s2">&quot;sharedsk!userreviewscore&quot;</span><span class="s1">; 
+    </span><span class="s0">public static final </span><span class="s1">String SHARED_OWNER_REVIEW_CNT=</span><span class="s2">&quot;sharedsk!reviewcnt&quot;</span><span class="s1">; 
+    </span><span class="s0">public static final </span><span class="s1">String SHARED_OWNER_REVIEW_SCORE=</span><span class="s2">&quot;sharedsk!reviewscore&quot;</span><span class="s1">; 
+    </span><span class="s0">public static final </span><span class="s1">String SHARED_IS_EMAIL=</span><span class="s2">&quot;sharedsk!isemail&quot;</span><span class="s1">; 
+    </span><span class="s0">public static final </span><span class="s1">String SHARED_IS_COMPANY=</span><span class="s2">&quot;sharedsk!iscompany&quot;</span><span class="s1">; 
+    </span><span class="s0">public static final </span><span class="s1">String SHARED_IS_PHONE=</span><span class="s2">&quot;sharedsk!isphone&quot;</span><span class="s1">; 
+    </span><span class="s0">public static final </span><span class="s1">String SHARED_IS_LICEN=</span><span class="s2">&quot;sharedsk!islicen&quot;</span><span class="s1">; 
+    </span><span class="s0">public static final </span><span class="s1">String SHARED_MILEAGE=</span><span class="s2">&quot;sharedsk!mileage&quot;</span><span class="s1">; 
+    </span><span class="s0">public static final </span><span class="s1">String SHARED_ACCIDENT=</span><span class="s2">&quot;sharedsk!accident&quot;</span><span class="s1">; 
+    </span><span class="s0">public static final </span><span class="s1">String SHARED_USER_RES_CNT=</span><span class="s2">&quot;sharedsk!userrescnt&quot;</span><span class="s1">; 
+    </span><span class="s0">public static final </span><span class="s1">String SHARED_USER_PHONE=</span><span class="s2">&quot;sharedsk!userphone&quot;</span><span class="s1">; 
+    </span><span class="s0">boolean </span><span class="s1">isMain = </span><span class="s0">true</span><span class="s1">; 
+    PagerAdapter adapter; 
+    NonSwipeViewPager viewPager; 
+    TabLayout tabLayout; 
+    Toolbar toolbar; 
+    OwnerRootFragment ownerRootFragment; 
+    ReservationFragment resFragment; 
+    RootFragment rootFragment; 
+    UserinfoFragment userinfoFragment; 
+    ChatListFragment chatListFragment; 
+    Button btToolbar; 
+    ImageButton ibToolbarUser,ibToolbarOwner; 
+    TextView tvTitle; 
+    </span><span class="s0">private </span><span class="s1">BackPressClosehHandler backPressClosehHandler; 
+    </span><span class="s0">public static </span><span class="s1">String SENDBIRD_APP_ID = </span><span class="s2">&quot;03204093-25A1-491C-8658-D108A9E533B2&quot;</span><span class="s1">; 
+ 
+    @Override 
+    </span><span class="s0">protected void </span><span class="s1">onCreate(Bundle savedInstanceState) { 
+ 
+ 
+        </span><span class="s0">super</span><span class="s1">.onCreate(savedInstanceState); 
+        setContentView(R.layout.activity_main); 
+        backPressClosehHandler = </span><span class="s0">new </span><span class="s1">BackPressClosehHandler(</span><span class="s0">this</span><span class="s1">); 
+ 
+        </span><span class="s0">final </span><span class="s1">AppBarLayout appBarLayout = (AppBarLayout) findViewById(R.id.appbar); 
+ 
+        toolbar = (Toolbar) findViewById(R.id.introtoolbar); 
+        toolbar.setTitle(</span><span class="s2">&quot;&quot;</span><span class="s1">); 
+        btToolbar = (Button) toolbar.findViewById(R.id.bt_toolbar); 
+        ibToolbarUser = (ImageButton) toolbar.findViewById(R.id.ib_toolbar_user); 
+        ibToolbarOwner = (ImageButton) toolbar.findViewById(R.id.ib_toolbar_owner); 
+        tvTitle = (TextView) toolbar.findViewById(R.id.tv_toolbar); 
+        setSupportActionBar(toolbar); 
+ 
+        viewPager = (NonSwipeViewPager) findViewById(R.id.viewpager); 
+        </span><span class="s0">if </span><span class="s1">(viewPager != </span><span class="s0">null</span><span class="s1">) { 
+            setupViewPager(); 
+        } 
+ 
+        tabLayout = (TabLayout) findViewById(R.id.tabs); 
+        tabLayout.setupWithViewPager(viewPager); 
+        tabLayout.getTabAt(</span><span class="s3">0</span><span class="s1">).setIcon(R.drawable.ic_search_black_24dp); 
+        tabLayout.getTabAt(</span><span class="s3">1</span><span class="s1">).setIcon(R.drawable.ic_date_range_black_24dp); 
+        tabLayout.getTabAt(</span><span class="s3">2</span><span class="s1">).setIcon(R.drawable.ic_sms_black_24dp); 
+        tabLayout.getTabAt(</span><span class="s3">3</span><span class="s1">).setIcon(R.drawable.ic_drive_eta_black_24dp); 
+        tabLayout.getTabAt(</span><span class="s3">4</span><span class="s1">).setIcon(R.drawable.ic_person_black_24dp); 
+        tvTitle.setText(R.string.search_fage_name); 
+ 
+ 
+        </span><span class="s4">//탭 화면이 바뀔 때를 인식하는 리스너</span><span class="s1"> 
+        tabLayout.setOnTabSelectedListener(</span><span class="s0">new </span><span class="s1">TabLayout.OnTabSelectedListener() { 
+            @Override 
+            </span><span class="s0">public void </span><span class="s1">onTabSelected(TabLayout.Tab tab) { 
+                </span><span class="s4">//다른 화면에 넘어가면 앱바를 확장시킨다.</span><span class="s1"> 
+                appBarLayout.setExpanded(</span><span class="s0">true</span><span class="s1">); 
+                </span><span class="s4">//탭을 눌렀을 때 화면도 바꿔준다.</span><span class="s1"> 
+                viewPager.setCurrentItem(tab.getPosition()); 
+                getSupportFragmentManager().popBackStack(); 
+                </span><span class="s0">if </span><span class="s1">(tab.getPosition() == </span><span class="s3">0</span><span class="s1">) { 
+                    tvTitle.setText(R.string.search_fage_name); 
+                    btToolbar.setVisibility(View.GONE); 
+                    ibToolbarUser.setVisibility(View.GONE); 
+                    ibToolbarOwner.setVisibility(View.GONE); 
+                } </span><span class="s0">else if </span><span class="s1">(tab.getPosition() == </span><span class="s3">1</span><span class="s1">) { 
+                    btToolbar.setVisibility(View.VISIBLE); 
+                    ibToolbarUser.setVisibility(View.GONE); 
+                    ibToolbarOwner.setVisibility(View.GONE); 
+                    btToolbar.setBackgroundResource(R.drawable.round_button_type2); 
+                    </span><span class="s0">if </span><span class="s1">(resFragment.getisOwner()) { 
+                        tvTitle.setText(R.string.reservation_fage_name_owner); 
+                        btToolbar.setText(</span><span class="s2">&quot;대여&quot;</span><span class="s1">); 
+                    } </span><span class="s0">else </span><span class="s1">{ 
+                        tvTitle.setText(R.string.reservation_fage_name); 
+                        btToolbar.setText(</span><span class="s2">&quot;차주&quot;</span><span class="s1">); 
+ 
+                    } 
+                } </span><span class="s0">else if </span><span class="s1">(tab.getPosition() == </span><span class="s3">2</span><span class="s1">) { 
+ 
+                    tvTitle.setText(R.string.message); 
+                    btToolbar.setVisibility(View.GONE); 
+                    ibToolbarUser.setVisibility(View.GONE); 
+                    ibToolbarOwner.setVisibility(View.GONE); 
+                } </span><span class="s0">else if </span><span class="s1">(tab.getPosition() == </span><span class="s3">3</span><span class="s1">) { 
+                    </span><span class="s4">//조건문 걸어서 차주등록이 되어있으면 설정창 보이게 아니면 안보이게!</span><span class="s1"> 
+                    ibToolbarOwner.setBackgroundResource(R.drawable.setting_btn);
+ 
+                    ibToolbarUser.setVisibility(View.GONE); 
+                    tvTitle.setText(R.string.owner_fage_name); 
+                    btToolbar.setVisibility(View.GONE); 
+                } </span><span class="s0">else if </span><span class="s1">(tab.getPosition() == </span><span class="s3">4</span><span class="s1">) { 
+                    btToolbar.setVisibility(View.GONE); 
+                    ibToolbarUser.setBackgroundResource(R.drawable.setting_btn);
+                    ibToolbarUser.setVisibility(View.VISIBLE); 
+                    tvTitle.setText(R.string.profile); 
+                    ibToolbarOwner.setVisibility(View.GONE); 
+                } 
+            } 
+ 
+            @Override 
+            </span><span class="s0">public void </span><span class="s1">onTabUnselected(TabLayout.Tab tab) { 
+ 
+            } 
+ 
+            @Override 
+            </span><span class="s0">public void </span><span class="s1">onTabReselected(TabLayout.Tab tab) { 
+ 
+            } 
+        }); 
+    } 
+ 
+    </span><span class="s0">private void </span><span class="s1">setupViewPager() { 
+        adapter = </span><span class="s0">new </span><span class="s1">PagerAdapter(getSupportFragmentManager()); 
+        ownerRootFragment = </span><span class="s0">new </span><span class="s1">OwnerRootFragment(); 
+        resFragment = </span><span class="s0">new </span><span class="s1">ReservationFragment(); 
+        rootFragment = </span><span class="s0">new </span><span class="s1">RootFragment(); 
+        userinfoFragment = </span><span class="s0">new </span><span class="s1">UserinfoFragment(); 
+        chatListFragment = </span><span class="s0">new </span><span class="s1">ChatListFragment(); 
+        </span><span class="s4">//각각의 프래그먼트를 어뎁터에 추가해주고 뷰페이저에 해당 어뎁터를 뷰페이저에 매칭한다.</span><span class="s1"> 
+        adapter.addFragment(rootFragment); 
+        adapter.addFragment(resFragment); 
+        adapter.addFragment(chatListFragment); 
+        adapter.addFragment(ownerRootFragment); 
+        adapter.addFragment(userinfoFragment); 
+        viewPager.setAdapter(adapter); 
+ 
+    } 
+ 
+    </span><span class="s0">public static void </span><span class="s1">showToast(Context context, String content) { 
+        Toast.makeText(context, content, Toast.LENGTH_SHORT).show(); 
+    } 
+ 
+    @Override 
+    </span><span class="s0">public void </span><span class="s1">onBackPressed() { 
+        </span><span class="s0">if </span><span class="s1">(isMain) { 
+            backPressClosehHandler.onBackPressed(); 
+        } </span><span class="s0">else </span><span class="s1">{ 
+            </span><span class="s0">super</span><span class="s1">.onBackPressed(); 
+        } 
+    } 
+ 
+ 
+    </span><span class="s0">public void </span><span class="s1">setIsMain(</span><span class="s0">boolean </span><span class="s1">isMain) { 
+        </span><span class="s0">this</span><span class="s1">.isMain = isMain; 
+    } 
+}</span></pre>
+</body>
+</html>

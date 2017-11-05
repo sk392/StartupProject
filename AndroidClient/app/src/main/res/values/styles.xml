@@ -1,0 +1,424 @@
+<resources>
+    <style name="Blackapplemedium16">
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:lineSpacingExtra">-1dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Blackappleragular15">
+        <item name="android:textSize">15dp</item>
+        <item name="android:lineSpacingExtra">9dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Greyishappleregular12">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+        <item name="android:textColor">@color/greyish</item>
+    </style>
+    <style name="Warmgreythreeappleregular12">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/warm_grey_three</item>
+    </style>
+    <!-- Text styles -->
+    <style name="Blacktwoappleregular40">
+        <item name="android:textSize">40dp</item>
+        <item name="android:lineSpacingExtra">-25dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Blacktwoappleregular35">
+        <item name="android:textSize">35dp</item>
+        <item name="android:lineSpacingExtra">-25dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Blackappleregular25">
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="Blacktwoappleregular18">
+        <item name="android:textSize">18dp</item>
+        <item name="android:lineSpacingExtra">6dp</item>
+        <item name="android:textColor">@color/black_two</item>
+    </style>
+    <style name="Reddishorangeappleregular18">
+        <item name="android:textSize">18dp</item>
+        <item name="android:lineSpacingExtra">6dp</item>
+        <item name="android:textColor">@color/reddish_orange</item>
+    </style>
+    <style name="Reddishorangeappleregular16">
+        <item name="android:textSize">18dp</item>
+        <item name="android:lineSpacingExtra">6dp</item>
+        <item name="android:textColor">@color/reddish_orange</item>
+    </style>
+    <style name="Reddishorangeappleregular10">
+        <item name="android:textSize">10dp</item>
+        <item name="android:lineSpacingExtra">6dp</item>
+        <item name="android:textColor">@color/reddish_orange</item>
+    </style>
+    <style name="Reddishorangeappleregular12">
+        <item name="android:textSize">10dp</item>
+        <item name="android:lineSpacingExtra">6dp</item>
+        <item name="android:textColor">@color/reddish_orange</item>
+    </style>
+    <style name="Darkgreyblueapplebold17">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:lineSpacingExtra">-2dp</item>
+        <item name="android:textColor">@color/dark_grey_blue</item>
+    </style>
+    <style name="Whiteapplemedium15">
+        <item name="android:textSize">15dp</item>
+        <item name="android:lineSpacingExtra">0dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Blackhelveregular15">
+        <item name="android:textSize">15dp</item>
+        <item name="android:lineSpacingExtra">9dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Whitehelveregular15">
+        <item name="android:textSize">15dp</item>
+        <item name="android:lineSpacingExtra">9dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Darkgrayhelveregular15">
+        <item name="android:textSize">15dp</item>
+        <item name="android:lineSpacingExtra">9dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Greyishbrowntwoappleregular15">
+        <item name="android:textSize">15dp</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:textColor">@color/greyish_brown_two</item>
+    </style>
+    <style name="WhiteappleRegular15">
+        <item name="android:textSize">15dp</item>
+        <item name="android:lineSpacingExtra">9dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="WhiteappleRegular10">
+        <item name="android:textSize">10dp</item>
+        <item name="android:lineSpacingExtra">9dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="WhiteappleRegular25">
+        <item name="android:textSize">25dp</item>
+        <item name="android:lineSpacingExtra">9dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="WhiteappleRegular45">
+        <item name="android:textSize">45dp</item>
+        <item name="android:lineSpacingExtra">9dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Blackappleragular11">
+        <item name="android:textSize">15dp</item>
+        <item name="android:lineSpacingExtra">9dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Whiteappleregular15">
+        <item name="android:textSize">15dp</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Blacktwoapplesemibold4">
+        <item name="android:textSize">14dp</item>
+        <item name="android:lineSpacingExtra">45.5dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Blacktwoappleregular14">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Blacktwoappleregular16">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Blackappleregular14">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="Blackappleregular15">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="Whiteapplebold14">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Warmgreyappleregular14">
+        <item name="android:textSize">14dp</item>
+        <item name="android:lineSpacingExtra">6dp</item>
+        <item name="android:textColor">@color/warm_grey</item>
+    </style>
+    <style name="Whiteapplebold13">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Whiteapplemedium13">
+        <item name="android:textSize">13dp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Reddishorangeappleregular13">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:textColor">@color/reddish_orange</item>
+    </style>
+    <style name="Warmgreyappleregular13">
+        <item name="android:textSize">13dp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:textColor">@color/warm_grey</item>
+    </style>
+    <style name="Blackappleregular13">
+        <item name="android:textSize">13dp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="Greyishappleregular13">
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:textColor">@color/greyish</item>
+    </style>
+    <style name="Warmgreyfourappleregular13">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/warm_grey_four</item>
+    </style>
+    <style name="Greyishbrowntwoapplebold12">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/greyish_brown_two</item>
+    </style>
+    <style name="Warmgreyapple15">
+        <item name="android:textSize">12dp</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+        <item name="android:textColor">@color/warm_grey</item>
+    </style>
+    <style name="Warmgreyapple14">
+        <item name="android:textSize">14dp</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+        <item name="android:textColor">@color/warm_grey</item>
+    </style>
+    <style name="Warmgreyappleregular12">
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+        <item name="android:textColor">@color/warm_grey</item>
+    </style>
+    <style name="Blacktwoappleregular12">
+        <item name="android:textSize">12dp</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+        <item name="android:textColor">@color/black_two</item>
+    </style>
+    <style name="Paleskyblueappleregular12">
+        <item name="android:textSize">12dp</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+        <item name="android:textColor">@color/pale_sky_blue</item>
+    </style>
+    <style name="Slateblueappleregular12">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/slate_blue</item>
+    </style>
+    <style name="Slateblueappleregular15">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/slate_blue</item>
+    </style>
+    <style name="Slateblueappleregular10">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/slate_blue</item>
+    </style>
+    <style name="Slateblueappleregular11">
+        <item name="android:textSize">11dp</item>
+        <item name="android:textColor">@color/slate_blue</item>
+    </style>
+    <style name="Pinkishgreytwoappleregular12">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/pinkish_grey_two</item>
+    </style>
+    <style name="TextStyle">
+        <item name="android:textSize">12dp</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Blackappleregular12">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="Warmgreythreeappleregular11">
+        <item name="android:textSize">11dp</item>
+        <item name="android:textColor">@color/warm_grey_three</item>
+    </style>
+    <style name="Warmgreyappleregular11">
+        <item name="android:textSize">11dp</item>
+        <item name="android:textColor">@color/warm_grey</item>
+    </style>
+
+    <style name="Warmgreyappleregular10">
+        <item name="android:textSize">11dp</item>
+        <item name="android:textColor">@color/warm_grey</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="starRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:minHeight">57dip</item>
+        <item name="android:maxHeight">57dip</item>
+        <item name="android:thumb">@null</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextSubjectVertical">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="showcaseRegistLicenTheme" parent="ShowcaseView">
+        <item name="sv_backgroundColor">@color/reddish_orange_trans_3</item>
+        <item name="sv_showcaseColor">@color/reddish_orange_trans</item>
+        <item name="sv_titleTextAppearance">@style/WhiteappleRegular25</item>
+    </style>
+
+    <style name="TextSubjectHorizontal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+
+    <style name="TextLarge">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="TextXLarge">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+
+    </style>
+
+    <style name="TextXLargeVertical">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center_vertical</item>
+
+    </style>
+
+    <style name="TextXLargeHorizontal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="TextLargeHorizontal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="TextLargeVertical">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="customRatingBarLarge" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/custom_ratingbar_large</item>
+    </style>
+    <style name="customRatingBarMedium" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/custom_ratingbar_medium</item>
+    </style>
+
+    <style name="TextVertical">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="TextHorizontal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="OptionItemText">
+        <item name="android:textSize">13dp</item>
+        <item name="android:lineSpacingExtra">9dp</item>
+        <item name="android:textColor">@color/black_two</item>
+    </style>
+    <style name="EditTextMulti">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="EditTextbase">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="EditTextbasePass">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">textVisiblePassword</item>
+    </style>
+
+    <style name="LoadingProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@color/orange_transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

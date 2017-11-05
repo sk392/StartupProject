@@ -1,0 +1,289 @@
+<resources>
+    <string name="app_name">Carmony</string>
+    <string name="ex_cost">예상금액</string>
+    <string name="panalty">패널티 금액</string>
+    <string name="weekday">주중 :</string>
+    <string name="str_file">(FILE)</string>
+    <string name="error_network">일시적으로 네트워크에 접근할 수 없습니다.</string>
+    <string name="res_request_review_disabled">이용이 완료되었습니다</string>
+    <string name="weekend">주말 : </string>
+    <string name="alert_delivery_discription1">
+        <b>딜리버리는 약속 장소로 차량을 가져다주는 것을 말합니다.</b>
+    </string>
+    <string name="alert_delivery_discription2">
+         카모니에서는 차주의 개인정보 보호를 위해서 약속장소를잡는 것을 추천합니다. 약속 장소는 지하철 역으로 하되, 대화를 통해서 정확한 장소를 정하시면 됩니다.
+    </string>
+    <string name="alert_oneday_discription1">
+        <b>드라이버가 사고시, 보험 혜택을 받기 위해서는 \'더케이 손해보험\'의 \'원데이 보험\'을 가입해야합니다.</b>
+    </string>
+    <string name="alert_oneday_discription2">
+         당일날 차량 수령과 동시에 원데이 앱을 통해서 가입을 하셔야되며, 금액은 고객이 부담하셔야 합니다. (금액은 약 1~1.3만원이며 연령에 따라 달라집니다.)
+    </string>
+    <string name="alert_oneday_discription3">
+         렌트카 업체의 차량인 경우에는 원데이 보험에 가입하실 필요가 없으며, 자체 보험 제도에 따르시면 됩니다.
+    </string>
+    <string name="alert_rule_discription1">
+         임차중 발생한 재반교통법규 위반사항은 임차인의 책임입니다.
+    </string>
+    <string name="alert_signup_rule_discription1" formatted="false">
+  카모니 이용정책 \n\n본 이용정책은 주식회사 카모니(이하 회사)가 제공하는 서비스(이하 ((<![CDATA["'"]]>서비스((<![CDATA["'"]]>)를 회원이 이용함에 있어 발생할 수 있는 문제에 대해 신속하고 일관성 있게 대처하며 회원의 사용권을 보호하는 것을 목적으로 하고 있습니다. 회사는 중립적이고, 객관적인 입장에서 회원이 쾌적하게 서비스를 이용할 수 있도록 최선의 노력을 다할 것을 약속 드립니다. 이용정책에는 서비스 이용 시 회원이 유의하셔야 할 내용이 포함되어 있으니 주의 깊게 확인하시기를 권해 드립니다.\n\n1. 총칙 \n1) 본 이용정책은 서비스 운영 상 발생할 수 있는 문제에 대해 신속하고 일관성 있게 대처하기 위하여 마련되었으며, 회사가 서비스를 운영하고 회원이 서비스를 이용함에 있어 필요한 세부 규칙을 담고 있습니다. \n2) 회사는 서비스의 효율적인 운영을 위해 이용정책의 내용을 추가, 변경, 삭제할 수 있습니다. 이용정책의 내용이 추가, 변경, 삭제될 경우 회사는 적용일자 7일 전에 앱 또는 웹을 통해 공지하거나 이메일로 통지합니다. 단, 회원에게 불리한 내용 또는 중요한 내용의 경우 30일 전에 앱 또는 웹을 통해 공지하거나 이메일로 통지합니다. \n3) 본 이용정책은 약관에 포함하기 어려운 서비스 운영의 세부 규칙을 포함하고 있으며, 약관의 일부를 구성합니다. 회원은 피해나 불편을 겪지 않도록 공지를 확인하고, 변경된 내용에 대해 숙지해주시기 바랍니다. 숙지하지 못해 발생하는 피해나 불편에 대해 회사는 도움을 드릴 수 없습니다.\n4) 본 이용정책에 명시되지 않은 사항에 대해서는 이용약관, 관계 법령 및 상관례에 따릅니다. \n\n2. 회원의 의무와 권리 \n회사가 양질의 서비스를 제공하고 회원이 서비스를 쾌적하게 이용하기 위해, 회원은 아래 사항들을 지켜주셔야 합니다.\n1) 회원은 본인의 정보로 회원가입 또는 서비스를 이용해 주셔야 합니다. 타인의 정보 또는 허위 정보를 이용하여 회원가입 또는 서비스를 이용하다 발생한 문제에 대해 회사는 어떠한 도움도 드리지 않으며, 이 경우 회원은 서비스 이용이 제한되거나 패널티가 부과될 수 있습니다. 또한 이로 인해 발생한 피해에 대해서는 회원 본인이 민형사상 처벌을 받을 수 있습니다.\n2) 회사는 약관 및 이용정책에 따라 유효하게 매칭된 카셰어링을 제외하고 회원 간에 발생한 거래와 관계를 인정하지 않습니다. 이로 인해 발생하는 문제에 대해서는 도움을 드리기 어려우므로 회원은 회사의 약관과 정책에 따라 서비스를 이용해주시기 바랍니다. \n3) 차주 회원은 여객자동차 운수사업법 제81조 자가용 자동차의 유상대여 금지 조항을 준수할 의무가 있습니다. 차주 회원은 대여료를 받아서는 안되며, 딜리버리 서비스 비용만 받습니다. 또한 유상대여를 목적으로 카모니 서비스를 악용해서는 안됩니다.\n4) 회원은 회사의 서비스를 이용하여 얻은 정보를 회사의 사전 승낙 없이 복사/복제/변경/번역/출판/방송 등의 방법으로사용하거나, 이를 타인에게 제공하실 수 없습니다. \n5) 회원은 반복적으로 예약을 요청하고 취소하는 행위, 예약된 이후 반복적으로 요청을 취소하거나 수락을 취소하는 행위를 해서는 안됩니다. 이 경우 회원은 서비스 이용이 제한되거나 패널티가 부과될 수 있습니다. \n6) 회원은 서비스의 약점이나 오류를 발견할 경우 반드시 1:1 문의 등을 통해 신고해 주셔야 합니다. 다음에 해당할 경우에는 사전 경고 없이 서비스 이용을 제한할 수 있습니다.\n\n① 시스템의 문제점을 통한 악용 행위를 \n② 오류를 알리지 않고 이를 유포 및 악용하는 행위 \n③ 시스템의 불안정을 이용하여 회사의 업무 또는 다른 회원의 이용을 방해하는 행위\n④ 데이터 조작 및 추출 행위\n⑤ 다른 회원의 개인정보를 유출하는 행위\n⑥ 회사의 지적 재산 소유권 조항을 위반하는 행위\n⑦ 위의 항목 외에도 이용정책 기준에 벗어난다고 회사가 판단하는 행위\n7) 회원은 앱 또는 이메일을 통해 서비스와 관련된 문의를 할 수 있습니다.\n8) 회원이 서비스 이용 과정에서 부당한 피해를 당한 경우, 정당한 방법을 통하여 피해 회복을 위한 권리를 행사할 수 있습니다. 회사는 회원의 정당한 권리를 보호하기 위해 최선을 다할 것을 약속합니다.\n\n3. 비용와 자동결제\n1) 딜리버리 비용은 기본료, 거리에 따른 비용, 시간에 따른 비용으로 구성되며, 패널티 요금는 등 기타 비용이 합산됩니다. 회사는 차주 회원과 대여자 회원 모두 수긍할 수 있는 합리적인 비용을 산정하기 위해 노력하고 있으며 경비 산정 기준은 회사 내부 정책에 따릅니다.\n2) 경비 산정 기준은 변경될 수 있으며, 이에 대해서는 회원이 알고 있어야 할 책임이 있습니다. 변경된 사항을 숙지하지 못해 발생하는 회원의 피해나 불편에 대해 회사는 도움을 드릴 수 없습니다.\n3) 회사는 대여자 회원의 편의를 위해 현장 현금 결제 또는 카드 결제 등 다양한 결제 방법을 제공합니다. 대여자 회원이 결제 카드를 등록한 경우 회사는 대여자 회원이 별도의 인증과정 없이 딜리버리 비용 또는 패널티 금액을 자동으로 결제하겠다는 의사표시를 한 것으로 봅니다.\n4) 결제 금액에 대한 정정, 취소요청과 이의제기는 결제 시점으로부터 30일 이내에 앱 또는 웹사이트의 문의하기를 통해 접수해 주셔야 합니다. 기간을 초과한 요청 건에 대해서 회사는 도움을 드릴 수 없습니다. \n5) 결제 시점에 시스템 장애로 인하여 결제 실패가 된 경우에는 시스템 정상화가 된 시점에 결제를 진행합니다.\n6) 결제 시점에 시스템 여정 검증 시스템에 의해 결제가 보류가 된 경우에는 회사의 확인 및 조정 후에 결제를 진행합니다.\n7) 결제 시점에 회원이 등록한 결제카드 등의 유효성, 한도 등의 문제로 결제가 실패한 경우에 미수로 처리되며, 미수 결제가 정상적으로 결제되기 전까지는 해당 회원은 서비스 이용이 제한됩니다.\n8) 미수가 발생한 경우 회사는 내부 정책에 따라 결제를 시도하며 이 때 회원에게 별도로 고지하지 않습니다.\n\n4. 쿠폰과 크레딧\n1) 쿠폰과 크레딧은 회사가 프로모션 용도로 회원에게 제공하는 것으로서, 정해진 조건에 따라 경비의 전부 또는 일부를 할인 받을 수 있는 이용권을 말합니다.\n2) 쿠폰과 크레딧은 회사의 내부 정책에 따라 회원에게 개별적으로 부여할 수 있고, 회원은 쿠폰과 크레딧에 명시된 조건에 따라 사용할 수 있습니다.\n3) 회사로부터 무상 제공받은 쿠폰과 크레딧은 회원 간 거래 및 양도가 불가능하며 어떠한 경우에도 현금으로 환불되거나 타인에게 양도되지 않습니다.\n4) 회원이 회사의 시스템 오류나 정책을 악용하여 부당한 방법으로 쿠폰이나 크레딧을 적립할 경우, 회사는 회원의 서비스 이용을 정지할 수 있으며, 적립된 쿠폰과 크레딧을 말소할 수 있습니다.\n5) 회사는 필요한 경우 회원의 쿠폰과 크레딧 정보를 검색할 수 있으며, 쿠폰과 크레딧이 착오로 지급된 경우에는 이를 임의로 정정할 수 있습니다. \n\n5. 차주 회원의 정산 \n1) 차주 회원의 정산은 매달 10일에 이뤄지며 정산일이 공휴일인 경우 그 익일에 진행하는 것을 원칙으로 합니다. 하지만 회사의 불가피한 사유로 정산이 지연될 수 있으며, 이 경우 변경된 정산일은 공지를 통해 안내해드립니다.\n2) 정산 항목과 기준은 다음과 같습니다.\n\n정산항목	상세내용	정산기준 및 시점\n딜리버리수익	정상적으로 딜리버리된 건에 대해 발생한 수익 (기본료, 거리/시간에 따른 비용, 서비스료 등)	전월의 딜리버리 수익 중 수수료,부가세, 소득세를 제외한 후 익월 10일에 지급\n패널티 수익	차량을 공유하는 동안, 대여자의 규칙 위한으로 발생하는 패널티 수익	\n전월의 딜리버리 수익 중 수수료,부가세, 소득세를 제외한 후 익월 10일에 지급\n기타수입	정해진 조건을 충족한 회원에게 일괄적으로 지급하는 보조금이나 발생한 문제에 따른 보상금\n3) 회사의 서비스수수료는 딜리버리수입의 15(<![CDATA["%"]]>이며 모든 운행 건에 공통 적용됩니다. 서비스수수료는 정산 시점에 딜리버리비용에서 자동으로 차감됩니다.\n4) 차주 회원은 정산을 받기 위해서 주민등록번호화 본인 명의로 된 계좌 정보등의 지급정보를 앱에 등록해야 합니다. 타인의 정보를 입력하거나 잘못된 정보를 입력할 경우 회사는 정산해드릴 수없으며 이로 인해 발생한 피해나 불편에 대해서 회사는 책임을 지지 않습니다.\n5) 차주 회원이 지급정보가 불충분하여 정산이 이뤄지지 않은 경우, 수입이 발생한 시점으로부터 3개월이 경과하면 해당 수입에 대한 회사의 지급의무가 소멸됩니다. 차주 회원은 3개월 이내에 지급정보를 입력하고 수입에 대한 정산을 청구할 수 있으며 이 경우 정산은 회사의 일정에 따라 지급됩니다.\n6) 서비스 이용 중 차량 딜리버리를 정상적으로 처리하지 않는 경우 해당 예약은 무효화되며 정산이 이뤄지지 않습니다. 이로 인해 발생한 피해나 불편에 대해서 회사는 책임을 지지 않습니다.\n7) 정산 시 드라이버 회원의 모든 수입에서 4.4(<![CDATA["%"]]>를 원천징수하여 지급합니다. 정산을 받은 드라이버 회원은 다음연도 종합소득 신고 시 소득금액에 따라 추가 납부나 환급을 받을 수 있습니다. 종합소득 신고에 대한 자세한 내용은 국세청 홈택스에 문의하시기 바랍니다. (국세청 홈택스 홈페이지: www.hometax.go.kr 또는 국번없이 126번으로 문의)\n8) 종합소득 신고를 위해 필요한 원천징수영수증은 해당연도 연말에 신청해주시면 등록하신 메일로 발부해드립니다. 회원 탈퇴 시 원천징수영수증은 발부되지 않습니다.\n9) 탈퇴 시 차주 회원이 보유한 적립금과 수입 등 모든 권리는 자동으로 소멸됩니다. 따라서 차주 회원은 탈퇴 신청 전에 본인이 보유한 적립금과 수입을 반드시 확인해주셔야 합니다. 탈퇴 시 소멸된 적립금과 수입은 어떠한 경우에도 복구되지 않습니다.\n10) 운행 중 교통법규를 위반하여 부과된 범칙금과 과태료는 대여회원이 납부합니다. 안전하고 쾌적한 카쉐어링을 위해 교통법규를 준수하시기 바랍니다.\n11) 정산 금액에 대한 정정 요청과 이의제기는 정산이 완료된 시점으로부터 30일 이내에 앱 또는 웹사이트의 문의하기를 통해 접수해 주셔야 합니다. 기간을 초과한 요청 건에 대해서 회사는 도움을 드릴 수 없습니다.\n
+    </string>
+    <string name="alert_rule_discription2">
+         임차인을 제외한 제 3자가 운전 중 일어난 사고와 반납예정일시를 무단으로 초과한 경우 보험혜택을 받지 못하며, 도난으로 간주됩니다.
+    </string>
+    <string name="alert_rule_discription3">
+         차량 대여기간 연장시 임대인에게 사전 승인을 받아야하며, 불이행시 차량 절취 및 부정사용, 사기로 간주되어, 형사처벌을 받아도 이의를 제기하지 않으며, 이로인한 당사의 임의적인 차량 회수에도 일체 이의를 제기하지 않겠습니다.
+    </string>
+    <string name="alert_rule_discription4">
+         상기 차량은 위치추적과 블랙박스가 설치되어져 있는 차량임을 안내 받았으며, 설치에 동의합니다.
+    </string>
+    <string name="alert_rule_discription5">
+         유류는 최초대여시와 동일한 양으로 반차하셔야되며 부족시에는 사용하신 양만큼 추가부담 됩니다.
+    </string>
+    <string name="alert_rule_discription6">
+         본인이 본계약서 동의 후에는 카모니 대여약관에 기재된 사항을 숙지하고 이를 승인합니다.
+    </string>
+    <string name="alert_penalty_wash">내부 세차 패널티</string>
+    <string name="alert_penalty_oiling_row">미주유 패널티(반칸)</string>
+    <string name="alert_penalty_oiling_express">초과 주유 환불(반칸)</string>
+    <string name="alert_penalty_smoking">흡연</string>
+    <string name="alert_penalty_delay_hour_row">무단 반납지연(1시간 이하)</string>
+    <string name="alert_penalty_delay_hour">무단 반납지연(1시간 이상)</string>
+    <string name="rent_location">대여 지역</string>
+    <string name="income">수입</string>
+    <string name="offline_cost">현장 결제 금액</string>
+    <string name="online_cost">사전 결제 금액</string>
+    <string name="oneday_cost">원데이 보험 금액</string>
+    <string name="owner_profile">차주 정보</string>
+    <string name="profile">프로필</string>
+    <string name="carmony_message_alert"><b>Carmony</b></string>
+    <string name="all_date">총</string>
+    <string name="this_month">이번달</string>
+    <string name="rent_date">대여일정</string>
+    <string name="id">ID : </string>
+    <string name="owner_reviews">차주 리뷰</string>
+    <string name="owner_registering">차주 등록</string>
+    <string name="schedule_registering">일정 등록</string>
+    <string name="owner_regi_info">알아보기</string>
+    <string name="car_reviews">차량 리뷰</string>
+    <string name="user_reviews">드라이버 리뷰</string>
+    <string name="car_model_all">전체보기</string>
+    <string name="subway_name">지하철 역명(ex - 사당역, 서울역)</string>
+    <string name="save">저장</string>
+    <string name="editing">수정하기</string>
+    <string name="name">이름</string>
+    <string name="dis_coupon">할인 쿠폰</string>
+    <string name="Contact">연락처</string>
+    <string name="foul">반칙</string>
+    <string name="mycoupons">보유 쿠폰</string>
+    <string name="reservation_fage_name_owner">차주 대여 내역</string>
+    <string name="reservation_fage_name">대여 내역</string>
+    <string name="search_fage_name">차량예약</string>
+    <string name="owner_fage_name">차주 페이지</string>
+    <string name="userinfo_fage_name">사용자 정보</string>
+    <string name="contact_change">연락처 변경</string>
+    <string name="regist_licen">면허증 등록</string>
+    <string name="regist_card">카드 등록</string>
+    <string name="passwd_change">비밀번호 변경</string>
+    <string name="current_passwd">현재 비밀번호</string>
+    <string name="after_passwd">변경할 비밀번호</string>
+    <string name="current_contact">현재 연락처</string>
+    <string name="after_contact">변경할 연락처</string>
+    <string name="re_input">재입력</string>
+    <string name="Logout">로그아웃</string>
+    <string name="fb_login_protocol_scheme">scheme_dummy</string>
+    <string name="facebook_app_id">appid_dummy</string>
+    <string name="score">평점</string>
+    <string name="accident">사고</string>
+    <string name="is_all">본인인증</string>
+    <string name="address_search">주소 검색</string>
+    <string name="kakao_app_key">key_dummy</string>
+    <string name="is_email">이메일</string>
+    <string name="email">이메일</string>
+    <string name="in_date">유효기간 내 </string>
+    <string name="use_able">사용 가능</string>
+    <string name="limit_time">최대 48시간 예약 가능</string>
+    <string name="coupon_info_1">쿠폰은 최초 딜리버리 금액과 반납지연 패널티에 적용됩니다.</string>
+    <string name="coupon_info_2">쿠폰은 예약당 1개만 가능합니다.</string>
+    <string name="coupon_info_3">예약 취소 시, 쿠폰은 유효기간 내에만 재발급됩니다.</string>
+    <string name="coupon_info_date_1">평일 기준 : 일요일 18:00 ~ 금요일 18:00</string>
+    <string name="coupon_info_date_2">주말 기준 : 금요일 18:00 ~ 일요일 18:00</string>
+    <string name="coupon_info_limit">유효 기간</string>
+    <string name="coupon_info_if">조건 / 혜택</string>
+    <string name="coupon_title">쿠폰함</string>
+    <string name="url_auth">https://14.63.225.26:27443/api/user_auth.php</string>
+    <string name="url_auth_kakao">https://14.63.225.26:27443/api/user_auth_kakao.php</string>
+    <string name="url_register_user">https://14.63.225.26:27443/api/register_user.php</string>
+    <string name="url_auth_facebook">https://14.63.225.26:27443/api/user_auth_facebook.php</string>
+    <string name="url_get_user_info">http://14.63.225.26:2780/api/get_user_info.php</string>
+    <string name="url_get_target_user_info">http://14.63.225.26:2780/api/get_target_user_info.php</string>
+    <string name="url_get_target_user_review_list">http://14.63.225.26:2780/api/get_target_user_review_list.php</string>
+    <string name="url_set_new_password">http://14.63.225.26:2780/api/set_new_password.php</string>
+    <string name="url_set_payment">http://14.63.225.26:2780/api/set_payment.php</string>
+    <string name="url_get_owner_info">http://14.63.225.26:2780/api/get_owner_info.php</string>
+    <string name="url_get_user_review_state">http://14.63.225.26:2780/api/get_user_review_state.php</string>
+    <string name="url_image_server">http://fj01-qb5024.ktics.co.kr/</string>
+    <string name="url_get_car_review_list">http://14.63.225.26:2780/api/get_car_review_list.php</string>
+    <string name="url_get_check_email">http://14.63.225.26:2780/api/get_check_email.php</string>
+    <string name="url_get_user_review_list">http://14.63.225.26:2780/api/get_user_review_list.php</string>
+    <string name="url_set_user_passwd">http://14.63.225.26:2780/api/set_user_passwd.php</string>
+    <string name="url_set_user_profile_url">http://14.63.225.26:2780/api/set_user_profile_url.php</string>
+    <string name="url_base_profile_url">http://fj01-qb5024.ktics.co.kr/user_base_profile.png</string>
+    <string name="url_get_sign_auth_num">http://14.63.225.26:2780/api/get_sign_auth_num.php</string>
+    <string name="url_set_reservation_sending_message">http://14.63.225.26:2780/api/set_reservation_sending_message.php</string>
+    <string name="url_get_user_coupon_list">http://14.63.225.26:2780/api/get_user_coupon_list.php</string>
+    <string name="url_set_user_review">http://14.63.225.26:2780/api/set_user_review.php</string>
+    <string name="url_set_car_review">http://14.63.225.26:2780/api/set_car_review.php</string>
+    <string name="url_set_token_update">http://14.63.225.26:2780/api/set_token_update.php</string>
+    <string name="url_get_subway_list">http://14.63.225.26:2780/api/get_subway_list.php</string>
+    <string name="url_set_user_intro">http://14.63.225.26:2780/api/set_user_intro.php</string>
+    <string name="url_set_owner_intro">http://14.63.225.26:2780/api/set_owner_intro.php</string>
+    <string name="url_get_car_list">http://14.63.225.26:2780/api/get_car_list.php</string>
+    <string name="url_set_user_contact">http://14.63.225.26:2780/api/set_user_contact.php</string>
+    <string name="url_get_user_car_list">http://14.63.225.26:2780/api/get_user_car_list.php</string>
+    <string name="url_get_reservation_list">http://14.63.225.26:2780/api/get_reservation_list.php</string>
+    <string name="url_get_reservation">http://14.63.225.26:2780/api/get_reservation.php</string>
+    <string name="url_get_reservation_state">http://14.63.225.26:2780/api/get_reservation_state.php</string>
+    <string name="url_get_payment">http://14.63.225.26:2780/api/get_payment.php</string>
+    <string name="url_set_reservation_state">http://14.63.225.26:2780/api/set_reservation_state.php</string>
+    <string name="url_get_user_email">http://14.63.225.26:2780/api/get_user_email.php</string>
+    <string name="url_set_reservation">http://14.63.225.26:2780/api/set_reservation.php</string>
+    <string name="url_get_car_detail_info">http://14.63.225.26:2780/api/get_car_detail_info.php</string>
+    <string name="url_set_owner_schedule">http://14.63.225.26:2780/api/set_owner_schedule.php</string>
+    <string name="url_get_owner_schedule">http://14.63.225.26:2780/api/get_owner_schedule.php</string>
+    <string name="url_set_regist_licen">http://14.63.225.26:2780/api/set_regist_licen.php</string>
+    <string name="url_get_user_payment_list">http://14.63.225.26:2780/api/get_user_payment_list.php</string>
+    <string name="url_set_owner_schedule_cancel">http://14.63.225.26:2780/api/set_owner_schedule_cancel.php</string>
+    <string name="shared_main_name">sharedsk!mainname</string>
+    <string name="shared_token">sharedsk!token</string>
+    <string name="shared_subway_list">sharedsk!subwaylist</string>
+    <string name="shared_email">sharedsk!email</string>
+    <string name="shared_is_licen_edit">sharedsk!sharedislicenedit</string>
+    <string name="shared_licen_name">sharedsk!sharedlicenname</string>
+    <string name="shared_licen_num">sharedsk!sharedlicennum</string>
+    <string name="shared_licen_num_one">sharedsk!sharedlicennumone</string>
+    <string name="shared_licen_num_two">sharedsk!sharedlicennumtwo</string>
+    <string name="shared_licen_num_three">sharedsk!sharedlicennumthree</string>
+    <string name="shared_licen_birth">sharedsk!sharedlicenbirth</string>
+    <string name="shared_licen_licen_date">sharedsk!sharedlicenlicendate</string>
+    <string name="shared_licen_licen_loc">sharedsk!sharedlicenlicenloc</string>
+    <string name="shared_name">sharedsk!name</string>
+    <string name="shared_type">sharedsk!type</string>
+    <string name="shared_userid">sharedsk!userid</string>
+    <string name="shared_userprofileurl">sharedsk!userprofileurl</string>
+    <string name="shared_owner_content">sharedsk!ownercontent</string>
+    <string name="shared_content">sharedsk!content</string>
+    <string name="shared_isface">sharedsk!isface</string>
+    <string name="shared_owner_reviewcnt">sharedsk!ownerreviewcnt</string>
+    <string name="shared_owner_reviewscore">sharedsk!ownerreviewscore</string>
+    <string name="shared_user_reviewcnt">sharedsk!userreviewcnt</string>
+    <string name="shared_user_reviewscore">sharedsk!userreviewscore</string>
+    <string name="shared_isemail">sharedsk!isemail</string>
+    <string name="shared_iscompany">sharedsk!iscompany</string>
+    <string name="shared_isphone">sharedsk!isphone</string>
+    <string name="shared_islicen">sharedsk!islicen</string>
+    <string name="shared_mileage">sharedsk!mileage</string>
+    <string name="shared_accident">sharedsk!accident</string>
+    <string name="shared_auto_login">sharedsk!autologin</string>
+    <string name="shared_userrescnt">sharedsk!userrescnt</string>
+    <string name="shared_ownerrescnt">sharedsk!ownerrescnt</string>
+    <string name="shared_userphone">sharedsk!userphone</string>
+    <string name="shared_ownerincome">sharedsk!ownerincome</string>
+    <string name="shared_ownermonthincome">sharedsk!ownermonthincome</string>
+    <string name="shared_ownermonthrescnt">sharedsk!ownermonthrescnt</string>
+    <string name="sendbird_app_id">id_dummy</string>
+    <string name="sendbird_api_token">token_dummy</string>
+
+    <string name="is_face">페이스북</string>
+    <string name="is_job">학교/직장</string>
+    <string name="is_phone">휴대폰</string>
+    <string name="send">전송</string>
+    <string name="licen_num">운전 면허 번호</string>
+    <string name="is_licen">면허증</string>
+    <string name="current_res">현재예약</string>
+    <string name="before_res">이전 예약건</string>
+    <string name="rental">대여</string>
+    <string name="search_start">대여시간</string>
+    <string name="search_end">반납시간</string>
+    <string name="car">차량</string>
+    <string name="message">메시지</string>
+    <string name="car_model">차량 종류</string>
+    <string name="total_cost">결제 금액</string>
+    <string name="all_cost">총 결제 금액</string>
+    <string name="car_rent_rule">패널티 금액</string>
+    <string name="rental_cost">대여 요금</string>
+    <string name="delivery_cost">딜리버리 요금</string>
+    <string name="panel_cost">반납지연 패널티</string>
+    <string name="oneday_warning"> 원데이 보험 가입 필수로 추가 금액이 발생합니다. </string>
+    <string name="car_descripttion">차량 설명</string>
+    <string name="review">REVIEWS</string>
+    <string name="car_info">차량 정보</string>
+    <string name="payment_info">결제 정보</string>
+    <string name="res_request">예약 요청하기</string>
+    <string name="res_request_review">리뷰 작성하기</string>
+    <string name="res_request_cancel">예약 요청 취소하기</string>
+    <string name="res_cancel">예약 취소하기</string>
+    <string name="car_miters">운행거리</string>
+    <string name="car_fuel">연료</string>
+    <string name="car_gear">오토 / 수동</string>
+    <string name="car_seat">인승</string>
+    <string name="option">옵션</string>
+    <string name="rental_condition">대여 조건</string>
+    <string name="is_delivery">딜리버리 필수 여부 </string>
+    <string name="is_oneday">원데이보험 필수 여부 </string>
+    <string name="carmony_rule">카모니 규칙</string>
+    <string name="signup_rule">개인정보 수집/이용 약관</string>
+    <string name="signup_carmony_rule">카모니 이용 약관</string>
+    <string name="add_cost">추가 요금</string>
+    <string name="res_num">예약 수 </string>
+    <string name="res">예약</string>
+    <string name="car_years">연식</string>
+    <string name="owner">차주</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_email_condition">이메일 (</string>
+    <string name="hint_passwd">Password</string>
+    <string name="hint_passwd_condition">비밀번호 (숫자,영문 조합 8~20자리)</string>
+    <string name="hint_name">닉네임</string>
+    <string name="hint_real_name">이름 (실명)</string>
+    <string name="hint_phone_num">휴대폰번호 (<![CDATA["'"]]>-<![CDATA["'"]]> 없이 입력 )</string>
+    <string name="hint_phone_auth">인증번호</string>
+    <string name="hint_auth_num_send">인증번호 발송</string>
+    <string name="hint_auth_num_auth">인증번호 확인</string>
+    <string name="hint_re_passwd">비밀번호 재입력</string>
+    <string name="hint_post">우편번호</string>
+    <string name="hint_homeaddress">주소</string>
+    <string name="hint_homeaddress_de">상세주소</string>
+    <string name="hint_signpath">가입경로</string>
+    <string name="hint_recom">추천인 이메일</string>
+    <string name="hint_birth">생년월일 (ex- 2012년 3월 20일 = 120320)</string>
+    <string name="hint_licennum">일련번호 (작은 사진 하단 숫자+ 영문)</string>
+    <string name="hint_licendate">발급일(ex- 2015. 09. 30. = 20150930)</string>
+    <string name="auto_login">자동 로그인</string>
+    <string name="login">Login</string>
+    <string name="kakao_login">카카오톡 로그인</string>
+    <string name="fb_login">페이스북 로그인</string>
+    <string name="signup">회원가입하기</string>
+    <string name="signup_next"><u>계속 가입하기</u></string>
+    <string name="find_id">아이디 찾기</string>
+    <string name="find_passwd">비밀번호 찾기</string>
+    <string name="sendbird_channel_create_message">차량 대여 요청합니다.</string>
+    <string name="regist_review">리뷰 작성</string>
+    <string name="sign_dialog">승인까지 약 1일이 소요됩니다. 바로 이용을 원하시면 카모니폴리스로 연락부탁드립니다.</string>
+    <string name="find_num_date"><u>일련번호 또는 발급일을 모르시나요??</u></string>
+    <string name="find_id_des_one">등록하신 핸드폰 번호로 ID가 문자 발송 됩니다.</string>
+    <string name="find_id_des_two">핸드폰 번호가 변경 되셨나요? \n카모니 폴리스로 연락 부탁드립니다.</string>
+    <string name="find_passwd_des">등록하신 이메일로 신규 비밀번호가 전송됩니다.</string>
+    <string name="empty_option">옵션 추가</string>
+    <string name="search">차량 검색</string>
+    <string name="non_reviews">작성된 리뷰가 없습니다. </string>
+    <string name="non_subway_result">검색된 역 이름이 없습니다. </string>
+    <string name="non_subway_history_result">최근 검색 내역이 없습니다. </string>
+    <string name="regist_licen_hint"><u>hint</u></string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

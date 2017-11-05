@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        layout="@layout/view_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="90dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="85dp">
+
+                <RelativeLayout
+                    android:background="@drawable/carinfo_default_image"
+                    android:layout_width="90dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_chat_payment_car"
+                        android:layout_width="90dp"
+                        android:layout_height="65dp"
+                        android:scaleType="centerCrop" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="133dp"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_chat_payment_start_date"
+                        style="@style/Paleskyblueappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016.12.31 13:00" />
+
+                    <TextView
+                        style="@style/Paleskyblueappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" - " />
+
+                    <TextView
+                        android:id="@+id/tv_chat_payment_end_date"
+                        style="@style/Paleskyblueappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016.12.31 13:00" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="133dp"
+                    android:layout_marginTop="31dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_chat_payment_car_model"
+                        style="@style/Blackhelveregular15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="k5" />
+
+                    <TextView
+                        android:id="@+id/tv_chat_payment_car_years"
+                        style="@style/Blackappleregular15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="2016" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="52dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/Blackhelveregular15"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:background="@drawable/location_icon_small" />
+
+                    <TextView
+                        android:id="@+id/tv_chat_payment_location"
+                        style="@style/Blackappleregular13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="사당역" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="85dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/pale_grey">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/silver" />
+
+                    <TextView
+                        style="@style/Slateblueappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/payment_info" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="49dp"
+                        android:background="@color/silver" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_chat_payment_cost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="50dp">
+
+                    <TextView
+                        style="@style/Blacktwoappleregular16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="28.5dp"
+                        android:text="@string/all_cost"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_chat_payment_total_cost"
+                        style="@style/Reddishorangeappleregular18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="24dp"
+                        android:text="0원" />
+
+                    <TextView
+                        style="@style/Blacktwoappleregular14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="55dp"
+                        android:text="@string/online_cost" />
+
+                    <TextView
+                        android:id="@+id/tv_chat_payment_online_cost"
+                        style="@style/Blacktwoappleregular14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="55dp"
+                        android:text="0원" />
+
+                    <TextView
+                        style="@style/Blacktwoappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="79dp"
+                        android:text="@string/rental_cost" />
+
+                    <TextView
+                        android:id="@+id/tv_chat_payment_rental_cost"
+                        style="@style/Blacktwoappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="79dp"
+                        android:text="0원" />
+
+                    <TextView
+                        style="@style/Blacktwoappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="98dp"
+                        android:text="@string/delivery_cost" />
+
+                    <TextView
+                        android:id="@+id/tv_chat_payment_delivery_cost"
+                        style="@style/Blacktwoappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="98dp"
+                        android:text="0원" />
+
+                    <TextView
+                        style="@style/Blacktwoappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="117dp"
+                        android:text="@string/panel_cost" />
+
+                    <TextView
+                        android:id="@+id/tv_chat_payment_late_cost"
+                        style="@style/Blacktwoappleregular12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="117dp"
+                        android:layout_marginBottom="20dp"/>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_chat_payment_oneday_cost"
+                        android:layout_width="match_parent"
+                        android:layout_height="134dp"
+                        android:layout_marginTop="155dp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/silver" />
+
+                        <TextView
+                            android:id="@+id/tv_chat_payment_oneday_warning"
+                            style="@style/Reddishorangeappleregular13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="18dp"
+                            android:text="@string/oneday_warning" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="50dp"
+                            android:background="@color/silver" />
+
+                        <TextView
+                            style="@style/Blacktwoappleregular14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="70dp"
+                            android:text="@string/offline_cost" />
+
+                        <TextView
+                            android:id="@+id/tv_chat_payment_offline_cost"
+                            style="@style/Blacktwoappleregular14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="70dp"
+                            android:text="0원" />
+
+                        <TextView
+                            style="@style/Blacktwoappleregular12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="95dp"
+                            android:text="@string/oneday_cost" />
+
+
+                        <TextView
+                            android:id="@+id/tv_chat_payment_oneday_cost"
+                            style="@style/Blacktwoappleregular12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="95dp"
+                            android:text="0원" />
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/rl_chat_payment_coupon"
+                        android:layout_marginTop="300dp"
+                        android:layout_height="60dp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/silver" />
+
+                        <TextView
+                            style="@style/Blacktwoappleregular12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="25dp"
+                            android:text="할인 금액" />
+
+                        <TextView
+                            android:id="@+id/tv_chat_payment_coupon_payment"
+                            style="@style/Blacktwoappleregular12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:layout_toLeftOf="@+id/bt_chat_payment_coupon"
+                            android:text="0원" />
+
+                        <Button
+                            android:id="@+id/bt_chat_payment_coupon"
+                            style="@style/Whiteapplebold13"
+                            android:layout_width="68.5dp"
+                            android:layout_height="28dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="25dp"
+                            android:background="@drawable/button_type_small"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="@string/coupon_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="59dp"
+                            android:background="@color/silver" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_chat_payment_cost">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp">
+
+                        <TextView
+                            style="@style/Blacktwoappleregular14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="25dp"
+                            android:text="최종 결제 금액"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_chat_payment_final_payment"
+                            style="@style/Reddishorangeappleregular18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="25dp"
+                            android:text="0원"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="59dp"
+                            android:background="@color/silver" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="60dp"
+                        android:background="@color/pale_grey">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="19dp"
+                            android:background="@color/silver" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="79dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_chat_payment_delivery"
+                            android:layout_width="match_parent"
+                            android:layout_height="49dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/Blacktwoappleregular12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/activity_dimens_small"
+                                android:layout_weight="0.7"
+                                android:text="@string/is_delivery" />
+
+
+                            <TextView
+                                android:id="@+id/tv_chat_payment_is_delivery"
+                                style="@style/Reddishorangeappleregular12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginRight="5dp"
+                                android:text="필수" />
+
+                            <com.sk392.kr.carmony.Library.SquareImageView
+                                android:layout_width="11dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="right|center_vertical"
+                                android:src="@drawable/arrow_small_gray" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="49dp"
+                            android:background="@color/silver" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_chat_payment_oneday"
+                            android:layout_width="match_parent"
+                            android:layout_height="49dp"
+                            android:layout_marginTop="50dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/Blacktwoappleregular12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/activity_dimens_small"
+                                android:layout_weight="0.7"
+                                android:text="@string/is_oneday" />
+
+
+                            <TextView
+                                android:id="@+id/tv_chat_payment_is_oneday"
+                                style="@style/Reddishorangeappleregular12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginRight="5dp"
+                                android:text="필수" />
+
+
+                            <com.sk392.kr.carmony.Library.SquareImageView
+                                android:layout_width="11dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="right|center_vertical"
+                                android:src="@drawable/arrow_small_gray" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="99dp"
+                            android:background="@color/silver" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_chat_payment_carmony_rule"
+                            android:layout_width="match_parent"
+                            android:layout_height="49dp"
+                            android:layout_marginTop="100dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/Blacktwoappleregular12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/activity_dimens_small"
+                                android:layout_weight="1"
+                                android:text="@string/carmony_rule" />
+
+                            <com.sk392.kr.carmony.Library.SquareImageView
+                                android:layout_width="11dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="right|center_vertical"
+                                android:src="@drawable/arrow_small_gray" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="149dp"
+                            android:background="@color/silver" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_chat_payment_panalty"
+                            android:layout_width="match_parent"
+                            android:layout_height="49dp"
+                            android:layout_marginTop="150dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/Blacktwoappleregular12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/activity_dimens_small"
+                                android:layout_weight="1"
+                                android:text="@string/car_rent_rule" />
+
+                            <com.sk392.kr.carmony.Library.SquareImageView
+                                android:layout_width="11dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="right|center_vertical"
+                                android:src="@drawable/arrow_small_gray" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="279dp"
+                        android:background="@color/silver" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_chat_payment_agree"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="300dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                style="@style/Blacktwoappleregular12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="규칙을 확인 하였으며, 카모니 대여약관에 동의합니다."
+                                android:textStyle="bold" />
+
+                            <CheckBox
+                                android:id="@+id/cb_chat_payment_carmony_rule"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:button="@drawable/option_item_select_type" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="50dp">
+
+                            <TextView
+                                style="@style/Blacktwoappleregular12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="위 예약내역 및 결제내역을 확인하였습니다."
+                                android:textStyle="bold" />
+
+                            <CheckBox
+                                android:id="@+id/cb_chat_payment_res_payment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:button="@drawable/option_item_select_type" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <Button
+        android:id="@+id/bt_chat_payment_res"
+        style="@style/Whiteapplebold13"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/large_button_type"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="결제 및 예약하기" />
+
+
+</android.support.design.widget.CoordinatorLayout>

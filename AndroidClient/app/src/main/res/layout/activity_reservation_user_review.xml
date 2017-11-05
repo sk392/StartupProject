@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_reservation_user_review"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/view_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Blacktwoappleregular18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="@string/car_reviews" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/silver" />
+
+        <RatingBar
+            android:id="@+id/rb_reservation_car_review"
+            style="@style/customRatingBarLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="62dp"
+            android:rating="5"
+            android:stepSize="0.5" />
+
+        <EditText
+            android:id="@+id/et_reservation_car_review"
+            style="@style/Blackappleregular13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="103dp"
+            android:background="@drawable/edittext_border"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:maxLength="140"
+            android:maxLines="5"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/tv_reservation_car_review_cnt"
+            style="@style/Warmgreyappleregular12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/et_reservation_car_review"
+            android:gravity="right"
+            android:text="(0/140)" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="270dp"
+        android:background="@color/white_six" />
+
+    <RelativeLayout
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="269dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Blacktwoappleregular18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="@string/owner_reviews" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/silver" />
+
+        <RatingBar
+            android:id="@+id/rb_reservation_user_review"
+            style="@style/customRatingBarLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="62dp"
+            android:rating="5"
+            android:stepSize="0.5" />
+
+        <EditText
+            android:id="@+id/et_reservation_user_review"
+            style="@style/Blackappleregular13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="103dp"
+            android:background="@drawable/edittext_border"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:maxLength="140"
+            android:maxLines="5"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/tv_reservation_user_review_cnt"
+            style="@style/Warmgreyappleregular12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/et_reservation_user_review"
+            android:gravity="right"
+            android:text="(0/140)" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_reservation_user_review"
+        style="@style/Whiteapplebold13"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/large_button_type"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/regist_review" />
+</RelativeLayout>

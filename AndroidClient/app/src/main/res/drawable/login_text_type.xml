@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 평상시 -->
+    <item android:color="@color/greyish" android:state_pressed="false" />
+
+    <!-- 클릭했을 때 -->
+    <item android:color="@color/reddish_orange"  android:state_pressed="true" />
+    <item android:color="@color/greyish" />
+</selector>

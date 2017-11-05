@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+
+        <TextView
+            style="@style/Darkgreyblueapplebold17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/panalty" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="53dp"
+            android:background="@color/white_six" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="59.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="85dp">
+
+            <TextView
+                style="@style/Blacktwoappleregular12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/alert_penalty_wash"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_panalty_wash"
+                style="@style/Warmgreyappleregular12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="10,000원" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="125dp"
+            android:background="@color/white_six" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="59.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="145dp">
+
+            <TextView
+                style="@style/Blacktwoappleregular12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/alert_penalty_oiling_row"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_panalty_oiling_row"
+                style="@style/Warmgreyappleregular12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="10,000원" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="185dp"
+            android:background="@color/white_six" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="59.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="205dp">
+
+            <TextView
+                style="@style/Blacktwoappleregular12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/alert_penalty_oiling_express"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_panalty_oiling_express"
+                style="@style/Warmgreyappleregular12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="0원" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="245dp"
+            android:background="@color/white_six" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="59.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="265dp">
+
+            <TextView
+                style="@style/Blacktwoappleregular12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/alert_penalty_smoking"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_panalty_smoking"
+                style="@style/Warmgreyappleregular12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="100,000원" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="305dp"
+            android:background="@color/white_six" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="59.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="325dp">
+
+            <TextView
+                style="@style/Blacktwoappleregular12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/alert_penalty_delay_hour_row"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_panalty_delay_hour_row"
+                style="@style/Warmgreyappleregular12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="20,000원 + 지연패널티" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="365dp"
+            android:background="@color/white_six" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="385dp">
+
+            <TextView
+                style="@style/Blacktwoappleregular12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/alert_penalty_delay_hour"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_panalty_delay_hour"
+                style="@style/Warmgreyappleregular12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="40,000원+지연패널티X2" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/bt_alert_panaly_close"
+            style="@style/Whiteapplemedium13"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/alert_bottom_button_type"
+            android:text="확인" />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="300dp"
+    android:id="@+id/rl_toast_layout_fcm_message"
+    android:layout_height="60dp"
+    android:background="@drawable/toast_layout_fcm_message_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <View
+        android:layout_width="1dp"
+        android:layout_height="60dp"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/logo_carmony_small"/>
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_marginLeft="70dp"
+        android:paddingBottom="5dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Whiteapplemedium15"
+            android:textStyle="bold"
+            android:text="Carmony"/>
+        <TextView
+            android:paddingTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Whiteapplemedium13"
+            android:id="@+id/tv_toast_layout_fcm_message"
+            android:text="메시지가 도착했습니다."/>
+    </LinearLayout>
+</RelativeLayout>
